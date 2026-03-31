@@ -1,0 +1,31 @@
+<!-- Plugin Configuration File: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+  <!-- Unique identifier of the plugin. It should be FQN, cannot be changed between the plugin versions. -->
+  <id>com.example.programmers_testcode</id>
+
+  <!-- Public plugin name should be written in Title Case.
+       Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-name -->
+  <name>Programmers Helper</name>
+
+  <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+  <vendor url="https://github.com">YourName</vendor>
+
+  <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+       Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-description -->
+  <description><![CDATA[
+    프로그래머스 코딩테스트 문제 풀이를 도와주는 플러그인입니다.<br>
+    문제별로 준비된 <b>.java 파일</b>을 내 프로젝트에 바로 생성할 수 있습니다.
+  ]]></description>
+
+  <!-- Product and plugin compatibility requirements.
+       Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <toolWindow id="Programmers Helper"
+      factoryClass="com.example.programmers_testcode.MyToolWindowFactory"
+      anchor="right"
+      icon="AllIcons.Toolwindows.ToolWindowStructure"/>
+  </extensions>
+</idea-plugin>
