@@ -1,2 +1,2 @@
-Java/두 수의 합.java
-
+Java/두수의합.java
+Java/완전범죄.java
