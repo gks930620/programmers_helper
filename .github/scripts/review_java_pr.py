@@ -5,7 +5,7 @@ PR에 추가된 Java 파일의 main 메소드 구조를 검사하고,
 통과 시 자동으로 PR을 머지합니다.
 
 필요한 Repository Secrets:
-  - OPENAI_API_KEY : OpenAI API 키
+  - GEMINI_API_KEY : Google Gemini API 키
 """
 
 import os
@@ -17,7 +17,7 @@ import requests
 GITHUB_TOKEN = os.environ["GITHUB_TOKEN"]
 PR_NUMBER = os.environ["PR_NUMBER"]
 REPO = os.environ["REPO"]
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 
 GITHUB_HEADERS = {
     "Authorization": f"token {GITHUB_TOKEN}",
@@ -122,15 +122,16 @@ def structural_check(filename, content):
 # ──────────────────────────────────────────────
 
 def ai_review(filename, content):
-    """OpenAI API로 main 메소드를 검토합니다. API 키가 없으면 None 반환."""
-    if not OPENAI_API_KEY:
-        print("경고: OPENAI_API_KEY가 설정되지 않아 AI 리뷰를 건너뜁니다.", file=sys.stderr)
+    """Google Gemini API로 main 메소드를 검토합니다. API 키가 없으면 None 반환."""
+    if not GEMINI_API_KEY:
+        print("경고: GEMINI_API_KEY가 설정되지 않아 AI 리뷰를 건너뜁니다.", file=sys.stderr)
         return None
 
     try:
-        from openai import OpenAI
+        import google.generativeai as genai
 
-        client = OpenAI(api_key=OPENAI_API_KEY)
+        genai.configure(api_key=GEMINI_API_KEY)
+        model = genai.GenerativeModel("gemini-2.0-flash")
 
         prompt = f"""아래 Java 파일을 검토해주세요.
 {REVIEW_CRITERIA}
@@ -141,7 +142,7 @@ def ai_review(filename, content):
 {content}
 ```
 
-반드시 아래 JSON 형식으로만 응답하세요:
+반드시 아래 JSON 형식으로만 응답하세요 (다른 텍스트 없이 JSON만):
 {{
   "approved": true 또는 false,
   "issues": ["문제점1", "문제점2"],
@@ -150,19 +151,14 @@ def ai_review(filename, content):
 
 문제가 없으면 issues는 빈 배열, approved는 true로 응답하세요.
 """
-        response = client.chat.completions.create(
-            model="gpt-4o-mini",
-            messages=[
-                {
-                    "role": "system",
-                    "content": "당신은 Java 코드 리뷰어입니다. 반드시 유효한 JSON만 응답하세요.",
-                },
-                {"role": "user", "content": prompt},
-            ],
-            response_format={"type": "json_object"},
-            temperature=0,
+        response = model.generate_content(
+            prompt,
+            generation_config=genai.GenerationConfig(
+                response_mime_type="application/json",
+                temperature=0,
+            ),
         )
-        return json.loads(response.choices[0].message.content)
+        return json.loads(response.text)
     except Exception as e:
         print(f"AI 리뷰 오류: {e}", file=sys.stderr)
         return None
@@ -201,22 +197,46 @@ def build_comment(approved, all_issues, file_reviews):
         body += "모든 검사를 통과했습니다. 자동으로 병합됩니다. 🎉\n"
     else:
         body = "## ❌ AI 코드 리뷰 결과 — 수정 필요\n\n"
-        body += "다음 문제를 수정하고 다시 Push해주세요:\n\n"
-        for issue in all_issues:
-            body += f"- {issue}\n"
+        body += "아래 문제를 수정한 뒤 다시 Push해주세요.\n"
+        body += "Push하면 자동으로 다시 검토됩니다.\n\n"
+        body += "### 🔍 발견된 문제\n\n"
+        for i, issue in enumerate(all_issues, 1):
+            body += f"{i}. {issue}\n"
 
     if file_reviews:
-        body += "\n---\n### 파일별 리뷰\n"
+        body += "\n---\n### 📄 파일별 리뷰\n"
         for review in file_reviews:
             status = "✅" if not review["issues"] else "❌"
             body += f"\n**{status} {review['filename']}**"
             if review.get("ai_summary"):
-                body += f"\n> {review['ai_summary']}"
+                body += f"\n> 🤖 AI: {review['ai_summary']}"
             if review["issues"]:
                 body += "\n"
                 for issue in review["issues"]:
                     body += f"  - {issue}\n"
             body += "\n"
+
+    if not approved:
+        body += "\n---\n"
+        body += "<details>\n<summary>📘 작성 규칙 요약 (클릭하여 펼치기)</summary>\n\n"
+        body += "#### 파일 위치\n"
+        body += "```\nsrc/main/resources/templates/Java/문제이름.java\n```\n\n"
+        body += "#### index.txt 등록\n"
+        body += "`src/main/resources/templates/index.txt`에 `Java/문제이름.java` 한 줄 추가\n\n"
+        body += "#### Java 파일 구조\n"
+        body += "```java\npublic class 문제이름 {\n"
+        body += "    public static void main(String[] args) {\n"
+        body += '        // System.out.println("--- Test Case 1 ---");\n'
+        body += '        // System.out.println("기대값  : ...");\n'
+        body += '        // System.out.println("결과값  : " + result);\n'
+        body += '        // System.out.println("비교    : " + ...);\n'
+        body += "    }\n"
+        body += "    public static 반환타입 solution(파라미터) {\n"
+        body += "        반환타입 answer = 초기값;\n"
+        body += "        return answer;\n"
+        body += "    }\n}\n```\n\n"
+        body += f"자세한 규칙은 [README.md](https://github.com/{REPO}/blob/main/README.md)를 참고하세요.\n"
+        body += "</details>\n"
 
     return body
 
@@ -238,6 +258,8 @@ def main():
         elif fname != INDEX_FILE:
             other_files.append(fname)
 
+    all_issues = []
+
     # Java 템플릿 파일도 없고, 허용되지 않는 파일도 없고, index.txt 변경도 없으면
     # 이 워크플로우와 무관한 PR — 조용히 종료
     has_index_change = any(f["filename"] == INDEX_FILE for f in pr_files)
@@ -253,8 +275,6 @@ def main():
         )
         post_comment(build_comment(False, all_issues, []))
         sys.exit(1)
-
-    all_issues = []
 
     # 허용되지 않는 파일 확인
     if other_files:
