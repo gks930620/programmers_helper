@@ -1,0 +1,31 @@
+public class PCCE기출문제8번닉네임규칙 {
+
+    public static void main(String[] args) {
+        // --- 테스트 케이스 1 ---
+        String nickname1 = "WORLDworld";
+        String expected1 = "VV0RLDvv";
+        String result1 = solution(nickname1);
+
+        System.out.println("--- Test Case 1 ---");
+        System.out.println("기대값  : " + expected1);
+        System.out.println("결과값  : " + result1);
+        System.out.println("비교    : " + expected1.equals(result1));
+        System.out.println();
+
+        // --- 테스트 케이스 2 ---
+        String nickname2 = "GO";
+        String expected2 = "G0oo";
+        String result2 = solution(nickname2);
+
+        System.out.println("--- Test Case 2 ---");
+        System.out.println("기대값  : " + expected2);
+        System.out.println("결과값  : " + result2);
+        System.out.println("비교    : " + expected2.equals(result2));
+
+    }
+
+    public static String solution(String nickname) {
+        String answer = "";
+        return answer;
+    }
+}

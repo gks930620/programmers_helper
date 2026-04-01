@@ -1,0 +1,681 @@
+﻿문제제목,입출력 예,자바파일
+혼자서 하는 틱택토,"board | result
+--- | ---
+[""O.X"", "".O."", ""..X""] | 1
+[""OOO"", ""..."", ""XXX""] | 0
+[""..."", "".X."", ""...""] | 0
+[""..."", ""..."", ""...""] | 1","class Solution {
+    public int solution(String[] board) {
+        int answer = -1;
+        return answer;
+    }
+}"
+요격 시스템,"targets | result
+--- | ---
+[[4,5],[4,8],[10,14],[11,13],[5,12],[3,7],[1,4]] | 3","class Solution {
+    public int solution(int[][] targets) {
+        int answer = 0;
+        return answer;
+    }
+}"
+[PCCP 기출문제] 1번 / 동영상 재생기,"video_len | pos | op_start | op_end | commands | result
+--- | --- | --- | --- | --- | ---
+""34:33"" | ""13:00"" | ""00:55"" | ""02:55"" | [""next"", ""prev""] | ""13:00""
+""10:55"" | ""00:05"" | ""00:15"" | ""06:55"" | [""prev"", ""next"", ""next""] | ""06:55""
+""07:22"" | ""04:05"" | ""00:15"" | ""04:07"" | [""next""] | ""04:17""","class Solution {
+    public String solution(String video_len, String pos, String op_start, String op_end, String[] commands) {
+        String answer = """";
+        return answer;
+    }
+}"
+도둑질,"money | return
+--- | ---
+[1, 2, 3, 1] | 4","class Solution {
+    public int solution(int[] money) {
+        int answer = 0;
+        return answer;
+    }
+}"
+표 편집,"n | k | cmd | result
+--- | --- | --- | ---
+8 | 2 | [""D 2"",""C"",""U 3"",""C"",""D 4"",""C"",""U 2"",""Z"",""Z""] | ""OOOOXOOO""
+8 | 2 | [""D 2"",""C"",""U 3"",""C"",""D 4"",""C"",""U 2"",""Z"",""Z"",""U 1"",""C""] | ""OOXOXOOO""","class Solution {
+    public String solution(int n, int k, String[] cmd) {
+        String answer = """";
+        return answer;
+    }
+}"
+양과 늑대,"info | edges | result
+--- | --- | ---
+[0,0,1,1,1,0,1,0,1,0,1,1] | [[0,1],[1,2],[1,4],[0,8],[8,7],[9,10],[9,11],[4,3],[6,5],[4,6],[8,9]] | 5
+[0,1,0,1,1,0,1,0,0,1,0] | [[0,1],[0,2],[1,3],[1,4],[2,5],[2,6],[3,7],[4,8],[6,9],[9,10]] | 5","class Solution {
+    public int solution(int[] info, int[][] edges) {
+        int answer = 0;
+        return answer;
+    }
+}"
+두 원 사이의 정수 쌍,"r1 | r2 | result
+--- | --- | ---
+2 | 3 | 20","class Solution {
+    public long solution(int r1, int r2) {
+        long answer = 0;
+        return answer;
+    }
+}"
+숫자 블록,"begin | end | result
+--- | --- | ---
+1 | 10 | [0, 1, 1, 2, 1, 3, 1, 4, 3, 5]","class Solution {
+    public int[] solution(long begin, long end) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+조이스틱,"name | return
+--- | ---
+""JEROEN"" | 56
+""JAN"" | 23","class Solution {
+    public int solution(String name) {
+        int answer = 0;
+        return answer;
+    }
+}"
+길 찾기 게임,"nodeinfo | result
+--- | ---
+[[5,3],[11,5],[13,3],[3,5],[6,1],[1,3],[8,6],[7,2],[2,2]] | [[7,4,6,9,1,8,5,2,3],[9,6,5,8,1,4,3,2,7]]","class Solution {
+    public int[][] solution(int[][] nodeinfo) {
+        int[][] answer = {};
+        return answer;
+    }
+}"
+양궁대회,"n | info | result
+--- | --- | ---
+5 | [2,1,1,1,0,0,0,0,0,0,0] | [0,2,2,0,1,0,0,0,0,0,0]
+1 | [1,0,0,0,0,0,0,0,0,0,0] | [-1]
+9 | [0,0,1,2,0,1,1,1,1,1,1] | [1,1,2,0,1,2,2,0,0,0,0]
+10 | [0,0,0,0,0,0,0,0,3,4,3] | [1,1,1,1,1,1,1,1,0,0,2]
+
+과녁 점수 | 어피치가 맞힌 화살 개수 | 라이언이 맞힌 화살 개수 | 결과
+--- | --- | --- | ---
+10 | 2 | 3 | 라이언이 10점 획득
+9 | 1 | 2 | 라이언이 9점 획득
+8 | 1 | 0 | 어피치가 8점 획득
+7 | 1 | 0 | 어피치가 7점 획득
+6 | 0 | 0 | 
+5 | 0 | 0 | 
+4 | 0 | 0 | 
+3 | 0 | 0 | 
+2 | 0 | 0 | 
+1 | 0 | 0 | 
+0 | 0 | 0 | 
+
+과녁 점수 | 어피치가 맞힌 화살 개수 | 라이언이 맞힌 화살 개수 | 결과
+--- | --- | --- | ---
+10 | 2 | 0 | 어피치가 10점 획득
+9 | 1 | 2 | 라이언이 9점 획득
+8 | 1 | 2 | 라이언이 8점 획득
+7 | 1 | 0 | 어피치가 7점 획득
+6 | 0 | 1 | 라이언이 6점 획득
+5 | 0 | 0 | 
+4 | 0 | 0 | 
+3 | 0 | 0 | 
+2 | 0 | 0 | 
+1 | 0 | 0 | 
+0 | 0 | 0 | 
+
+과녁 점수 | 어피치가 맞힌 화살 개수 | 라이언이 맞힌 화살 개수 | 결과
+--- | --- | --- | ---
+10 | 0 | 1 | 라이언이 10점 획득
+9 | 0 | 1 | 라이언이 9점 획득
+8 | 1 | 2 | 라이언이 8점 획득
+7 | 2 | 3 | 라이언이 7점 획득
+6 | 0 | 0 | 
+5 | 1 | 2 | 라이언이 5점 획득
+4 | 1 | 0 | 어피치가 4점 획득
+3 | 1 | 0 | 어피치가 3점 획득
+2 | 1 | 0 | 어피치가 2점 획득
+1 | 1 | 0 | 어피치가 1점 획득
+0 | 1 | 0 | 어피치가 0점 획득
+
+과녁 점수 | 어피치가 맞힌 화살 개수 | 라이언이 맞힌 화살 개수 | 결과
+--- | --- | --- | ---
+10 | 0 | 1 | 라이언이 10점 획득
+9 | 0 | 1 | 라이언이 9점 획득
+8 | 1 | 2 | 라이언이 8점 획득
+7 | 2 | 0 | 어피치가 7점 획득
+6 | 0 | 1 | 라이언이 6점 획득
+5 | 1 | 2 | 라이언이 5점 획득
+4 | 1 | 2 | 라이언이 4점 획득
+3 | 1 | 0 | 어피치가 3점 획득
+2 | 1 | 0 | 어피치가 2점 획득
+1 | 1 | 0 | 어피치가 1점 획득
+0 | 1 | 0 | 어피치가 0점 획득","class Solution {
+    public int[] solution(int n, int[] info) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+미로 탈출 명령어,"n | m | x | y | r | c | k | result
+--- | --- | --- | --- | --- | --- | --- | ---
+3 | 4 | 2 | 3 | 3 | 1 | 5 | ""dllrl""
+2 | 2 | 1 | 1 | 2 | 2 | 2 | ""dr""
+3 | 3 | 1 | 2 | 3 | 3 | 4 | ""impossible""","class Solution {
+    public String solution(int n, int m, int x, int y, int r, int c, int k) {
+        String answer = """";
+        return answer;
+    }
+}"
+옹알이 (1),"babbling | result
+--- | ---
+[""aya"", ""yee"", ""u"", ""maa"", ""wyeoo""] | 1
+[""ayaye"", ""uuuma"", ""ye"", ""yemawoo"", ""ayaa""] | 3","class Solution {
+    public int solution(String[] babbling) {
+        int answer = 0;
+        return answer;
+    }
+}"
+혼자 놀기의 달인,"cards | result
+--- | ---
+[8,6,3,7,2,5,1,4] | 12","class Solution {
+    public int solution(int[] cards) {
+        int answer = 0;
+        return answer;
+    }
+}"
+택배 배달과 수거하기," | 집 #1 | 집 #2 | 집 #3 | 집 #4 | 집 #5
+--- | --- | --- | --- | --- | ---
+배달 | 1개 | 0개 | 3개 | 1개 | 2개
+수거 | 0개 | 3개 | 0개 | 4개 | 0개
+
+ | 집 #1 | 집 #2 | 집 #3 | 집 #4 | 집 #5 | 설명
+--- | --- | --- | --- | --- | --- | ---
+남은 배달/수거 | 1/0 | 0/3 | 3/0 | 1/4 | 2/0 | 물류창고에서 택배 3개를 트럭에 실어 출발합니다.
+남은 배달/수거 | 1/0 | 0/3 | 3/0 | 0/4 | 0/0 | 물류창고에서 5번째 집까지 이동하면서(거리 5) 4번째 집에 택배 1개를 배달하고, 5번째 집에 택배 2개를 배달합니다.
+남은 배달/수거 | 1/0 | 0/3 | 3/0 | 0/0 | 0/0 | 5번째 집에서 물류창고까지 이동하면서(거리 5) 4번째 집에서 빈 택배 상자 4개를 수거한 후, 수거한 빈 택배 상자를 물류창고에 내리고 택배 4개를 트럭에 싣습니다.
+남은 배달/수거 | 0/0 | 0/3 | 0/0 | 0/0 | 0/0 | 물류창고에서 3번째 집까지 이동하면서(거리 3) 1번째 집에 택배 1개를 배달하고, 3번째 집에 택배 3개를 배달합니다.
+남은 배달/수거 | 0/0 | 0/0 | 0/0 | 0/0 | 0/0 | 3번째 집에서 물류창고까지 이동하면서(거리 3) 2번째 집에서 빈 택배 상자 3개를 수거한 후, 수거한 빈 택배 상자를 물류창고에 내립니다.
+
+cap | n | deliveries | pickups | result
+--- | --- | --- | --- | ---
+4 | 5 | [1, 0, 3, 1, 2] | [0, 3, 0, 4, 0] | 16
+2 | 7 | [1, 0, 2, 0, 1, 0, 2] | [0, 2, 0, 1, 0, 2, 0] | 30
+
+ | 집 #1 | 집 #2 | 집 #3 | 집 #4 | 집 #5 | 집 #6 | 집 #7
+--- | --- | --- | --- | --- | --- | --- | ---
+배달 | 1개 | 0개 | 2개 | 0개 | 1개 | 0개 | 2개
+수거 | 0개 | 2개 | 0개 | 1개 | 0개 | 2개 | 0개
+
+ | 집 #1 | 집 #2 | 집 #3 | 집 #4 | 집 #5 | 집 #6 | 집 #7 | 설명
+--- | --- | --- | --- | --- | --- | --- | --- | ---
+남은 배달/수거 | 1/0 | 0/2 | 2/0 | 0/1 | 1/0 | 0/2 | 2/0 | 물류창고에서 택배 2개를 트럭에 실어 출발합니다.
+남은 배달/수거 | 1/0 | 0/2 | 2/0 | 0/1 | 1/0 | 0/2 | 0/0 | 물류창고에서 7번째 집까지 이동하면서(거리 7) 7번째 집에 택배 2개를 배달합니다.
+남은 배달/수거 | 1/0 | 0/2 | 2/0 | 0/1 | 1/0 | 0/0 | 0/0 | 7번째 집에서 물류창고까지 이동하면서(거리 7) 6번째 집에서 빈 택배 상자 2개를 수거한 후, 수거한 빈 택배 상자를 물류창고에 내리고 택배 2개를 트럭에 싣습니다.
+남은 배달/수거 | 1/0 | 0/2 | 1/0 | 0/1 | 0/0 | 0/0 | 0/0 | 물류창고에서 5번째 집까지 이동하면서(거리 5) 3번째 집에 택배 1개를 배달하고, 5번째 집에 택배 1개를 배달합니다.
+남은 배달/수거 | 1/0 | 0/1 | 1/0 | 0/0 | 0/0 | 0/0 | 0/0 | 5번째 집에서 물류창고까지 이동하면서(거리 5) 4번째 집에서 빈 택배 상자 1개를 수거하고 2번째 집에서 빈 택배 상자 1개를 수거한 후, 수거한 빈 택배 상자를 물류창고에 내리고 택배 2개를 트럭에 싣습니다.
+남은 배달/수거 | 0/0 | 0/1 | 0/0 | 0/0 | 0/0 | 0/0 | 0/0 | 물류창고에서 3번째 집까지 이동하면서(거리 3) 1번째 집에 택배 1개를 배달하고, 3번째 집에 택배 1개를 배달합니다.
+남은 배달/수거 | 0/0 | 0/0 | 0/0 | 0/0 | 0/0 | 0/0 | 0/0 | 3번째 집에서 물류창고까지 이동하면서(거리 3) 2번째 집에서 빈 택배 상자 1개를 수거한 후, 수거한 빈 택배 상자를 물류창고에 내립니다.","class Solution {
+    public long solution(int cap, int n, int[] deliveries, int[] pickups) {
+        long answer = -1;
+        return answer;
+    }
+}"
+기둥과 보 설치,"n | build_frame | result
+--- | --- | ---
+5 | [[1,0,0,1],[1,1,1,1],[2,1,0,1],[2,2,1,1],[5,0,0,1],[5,1,0,1],[4,2,1,1],[3,2,1,1]] | [[1,0,0],[1,1,1],[2,1,0],[2,2,1],[3,2,1],[4,2,1],[5,0,0],[5,1,0]]
+5 | [[0,0,0,1],[2,0,0,1],[4,0,0,1],[0,1,1,1],[1,1,1,1],[2,1,1,1],[3,1,1,1],[2,0,0,0],[1,1,1,0],[2,2,0,1]] | [[0,0,0],[0,1,1],[1,1,1],[2,1,1],[3,1,1],[4,0,0]]","class Solution {
+    public int[][] solution(int n, int[][] build_frame) {
+        int[][] answer = {};
+        return answer;
+    }
+}"
+광고 삽입,"play_time | adv_time | logs | result
+--- | --- | --- | ---
+""02:03:55"" | ""00:14:15"" | [""01:20:15-01:45:14"", ""00:40:31-01:00:00"", ""00:25:50-00:48:29"", ""01:30:59-01:53:29"", ""01:37:44-02:02:30""] | ""01:30:59""
+""99:59:59"" | ""25:00:00"" | [""69:59:59-89:59:59"", ""01:00:00-21:00:00"", ""79:59:59-99:59:59"", ""11:00:00-31:00:00""] | ""01:00:00""
+""50:00:00"" | ""50:00:00"" | [""15:36:51-38:21:49"", ""10:14:18-15:36:51"", ""38:21:49-42:51:45""] | ""00:00:00""","class Solution {
+    public String solution(String play_time, String adv_time, String[] logs) {
+        String answer = """";
+        return answer;
+    }
+}"
+[PCCP 기출문제] 3번 / 충돌위험 찾기,"points | routes | result
+--- | --- | ---
+[[3, 2], [6, 4], [4, 7], [1, 4]] | [[4, 2], [1, 3], [2, 4]] | 1
+[[3, 2], [6, 4], [4, 7], [1, 4]] | [[4, 2], [1, 3], [4, 2], [4, 3]] | 9
+[[2, 2], [2, 3], [2, 7], [6, 6], [5, 2]] | [[2, 3, 4, 5], [1, 3, 4, 5]] | 0","class Solution {
+    public int solution(int[][] points, int[][] routes) {
+        int answer = 0;
+        return answer;
+    }
+}"
+택배 상자 꺼내기,"그룹 | 총점 | 추가 제한 사항
+--- | --- | ---
+#1 | 10% | w= 1
+#2 | 20% | n은w의 배수입니다.
+#3 | 70% | 추가 제한 사항 없음
+
+n | w | num | result
+--- | --- | --- | ---
+22 | 6 | 8 | 3
+13 | 3 | 6 | 4","class Solution {
+    public int solution(int n, int w, int num) {
+        int answer = 0;
+        return answer;
+    }
+}"
+보행자 천국,"m | n | city_map | answer
+--- | --- | --- | ---
+3 | 3 | [[0, 0, 0], [0, 0, 0], [0, 0, 0]] | 6
+3 | 6 | [[0, 2, 0, 0, 0, 2], [0, 0, 2, 0, 1, 0], [1, 0, 0, 2, 2, 0]] | 2","class Solution {
+    int MOD = 20170805;
+    public int solution(int m, int n, int[][] cityMap) {
+        int answer = 0;
+        return answer;
+    }
+}"
+호텔 방 배정,"원하는 방 번호 | 배정된 방 번호
+--- | ---
+1 | 1
+3 | 3
+4 | 4
+1 | 2
+3 | 5
+1 | 6
+
+k | room_number | result
+--- | --- | ---
+10 | [1,3,4,1,3,1] | [1,3,4,2,5,6]","class Solution {
+    public long[] solution(long k, long[] room_number) {
+        long[] answer = {};
+        return answer;
+    }
+}"
+110 옮기기,"s | result
+--- | ---
+[""1110"",""100111100"",""0111111010""] | [""1101"",""100110110"",""0110110111""]","class Solution {
+    public String[] solution(String[] s) {
+        String[] answer = {};
+        return answer;
+    }
+}"
+무지의 먹방 라이브,"food_times | k | result
+--- | --- | ---
+[3, 1, 2] | 5 | 1","class Solution {
+    public int solution(int[] food_times, long k) {
+        int answer = 0;
+        return answer;
+    }
+}"
+순위 검색,"info | query | result
+--- | --- | ---
+[""java backend junior pizza 150"",""python frontend senior chicken 210"",""python frontend senior chicken 150"",""cpp backend senior pizza 260"",""java backend junior chicken 80"",""python backend senior chicken 50""] | [""java and backend and junior and pizza 100"",""python and frontend and senior and chicken 200"",""cpp and - and senior and pizza 250"",""- and backend and senior and - 150"",""- and - and - and chicken 100"",""- and - and - and - 150""] | [1,1,1,1,2,4]
+
+언어 | 직군 | 경력 | 소울 푸드 | 점수
+--- | --- | --- | --- | ---
+java | backend | junior | pizza | 150
+python | frontend | senior | chicken | 210
+python | frontend | senior | chicken | 150
+cpp | backend | senior | pizza | 260
+java | backend | junior | chicken | 80
+python | backend | senior | chicken | 50","class Solution {
+    public int[] solution(String[] info, String[] query) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+표현 가능한 이진트리,"numbers | result
+--- | ---
+[7, 42, 5] | [1, 1, 0]
+[63, 111, 95] | [1, 1, 0]","class Solution {
+    public int[] solution(long[] numbers) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+올바른 괄호의 갯수,"n | result
+--- | ---
+2 | 2
+3 | 5","class Solution {
+    public int solution(int n) {
+        int answer = 0;
+        return answer;
+    }
+}"
+쿠키 구입,"cookie | result
+--- | ---
+[1,1,2,3] | 3
+[1,2,4,5] | 0","class Solution {
+    public int solution(int[] cookie) {
+        int answer = -1;
+        return answer;
+    }
+}"
+교점에 별 만들기,"line | result
+--- | ---
+[[2, -1, 4], [-2, -1, 4], [0, -1, 1], [5, -8, -12], [5, 8, 12]] | [""....*...."", ""........."", ""........."", ""*.......*"", ""........."", ""........."", ""........."", ""........."", ""*.......*""]
+[[0, 1, -1], [1, 0, -1], [1, 0, 1]] | [""*.*""]
+[[1, -1, 0], [2, -1, 0]] | [""*""]
+[[1, -1, 0], [2, -1, 0], [4, -1, 0]] | [""*""]","class Solution {
+    public String[] solution(int[][] line) {
+        String[] answer = {};
+        return answer;
+    }
+}"
+외벽 점검,"n | weak | dist | result
+--- | --- | --- | ---
+12 | [1, 5, 6, 10] | [1, 2, 3, 4] | 2
+12 | [1, 3, 4, 9, 10] | [3, 5, 7] | 1","class Solution {
+    public int solution(int n, int[] weak, int[] dist) {
+        int answer = 0;
+        return answer;
+    }
+}"
+바이러스 파이프,"그룹 | 총점 | 테스트 케이스 그룹 설명
+--- | --- | ---
+#1 | 10% | 트리가 일렬 모양입니다. 즉, 각 배양체에 연결된 파이프는 1개 혹은 2개입니다.
+#2 | 20% | 파이프의 type은 A 혹은 B만 주어집니다.
+#3 | 30% | 한 배양체에 연결된 파이프의 type이 모두 다릅니다.
+#4 | 40% | 추가 제한 사항 없음
+
+n | infection | edges | k | result
+--- | --- | --- | --- | ---
+10 | 1 | [[1, 2, 1], [1, 3, 1], [1, 4, 3], [1, 5, 2], [5, 6, 1], [5, 7, 1], [2, 8, 3], [2, 9, 2], [9, 10, 1]] | 2 | 6
+7 | 6 | [[1, 2, 3], [1, 4, 3], [4, 5, 1], [5, 6, 1], [3, 6, 2], [3, 7, 2]] | 3 | 7","class Solution {
+    public int solution(int n, int infection, int[][] edges, int k) {
+        int answer = 0;
+        return answer;
+    }
+}"
+[3차] 자동완성,"words | result
+--- | ---
+[""go"",""gone"",""guild""] | 7
+[""abc"",""def"",""ghi"",""jklm""] | 4
+[""word"",""war"",""warrior"",""world""] | 15","class Solution {
+    public int solution(String[] words) {
+        int answer = 0;
+        return answer;
+    }
+}"
+스타 수열,"a | result
+--- | ---
+[0] | 0
+[5,2,3,3,5,3] | 4
+[0,3,3,0,7,2,0,2,2,0] | 8","class Solution {
+    public int solution(int[] a) {
+        int answer = -1;
+        return answer;
+    }
+}"
+등산코스 정하기,"n | paths | gates | summits | result
+--- | --- | --- | --- | ---
+6 | [[1, 2, 3], [2, 3, 5], [2, 4, 2], [2, 5, 4], [3, 4, 4], [4, 5, 3], [4, 6, 1], [5, 6, 1]] | [1, 3] | [5] | [5, 3]
+7 | [[1, 4, 4], [1, 6, 1], [1, 7, 3], [2, 5, 2], [3, 7, 4], [5, 6, 6]] | [1] | [2, 3, 4] | [3, 4]
+7 | [[1, 2, 5], [1, 4, 1], [2, 3, 1], [2, 6, 7], [4, 5, 1], [5, 6, 1], [6, 7, 1]] | [3, 7] | [1, 5] | [5, 1]
+5 | [[1, 3, 10], [1, 4, 20], [2, 3, 4], [2, 4, 6], [3, 5, 20], [4, 5, 6]] | [1, 2] | [5] | [5, 6]","class Solution {
+    public int[] solution(int n, int[][] paths, int[] gates, int[] summits) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+노란불 신호등,"신호등 | 초록불 | 노란불 | 빨간불
+--- | --- | --- | ---
+1번 | 2초 | 1초 | 2초
+2번 | 5초 | 1초 | 1초
+
+그룹 | 총점 | 추가 제한 사항
+--- | --- | ---
+#1 | 30% | 신호등이 모두 노란불이 되는 시각이 20 이하인 정답이 존재합니다.
+#2 | 30% | 신호등이 모두 노란불이 되는 경우가 존재합니다.
+#3 | 40% | 추가 제한 사항 없음
+
+signals | result
+--- | ---
+[[2, 1, 2], [5, 1, 1]] | 13
+[[2, 3, 2], [3, 1, 3], [2, 1, 1]] | 11
+[[3, 3, 3], [5, 4, 2], [2, 1, 2]] | 193
+[[1, 1, 4], [2, 1, 3], [3, 1, 2], [4, 1, 1]] | -1
+
+신호등 | 초록불 | 노란불 | 빨간불
+--- | --- | --- | ---
+1번 | 2초 | 3초 | 2초
+2번 | 3초 | 1초 | 3초
+3번 | 2초 | 1초 | 1초
+
+신호등 | 초록불 | 노란불 | 빨간불
+--- | --- | --- | ---
+1번 | 3초 | 3초 | 3초
+2번 | 5초 | 4초 | 2초
+3번 | 2초 | 1초 | 2초","class Solution {
+    public int solution(int[][] signals) {
+        int answer = 0;
+        return answer;
+    }
+}"
+N으로 표현,"N | number | return
+--- | --- | ---
+5 | 12 | 4
+2 | 11 | 3","class Solution {
+    public int solution(int N, int number) {
+        int answer = 0;
+        return answer;
+    }
+}"
+아이템 줍기,"rectangle | characterX | characterY | itemX | itemY | result
+--- | --- | --- | --- | --- | ---
+[[1,1,7,4],[3,2,5,5],[4,3,6,9],[2,6,8,8]] | 1 | 3 | 7 | 8 | 17
+[[1,1,8,4],[2,2,4,9],[3,6,9,8],[6,3,7,7]] | 9 | 7 | 6 | 1 | 11
+[[1,1,5,7]] | 1 | 1 | 4 | 7 | 9
+[[2,1,7,5],[6,4,10,10]] | 3 | 1 | 7 | 10 | 15
+[[2,2,5,5],[1,3,6,4],[3,1,4,6]] | 1 | 4 | 6 | 3 | 10","class Solution {
+    public int solution(int[][] rectangle, int characterX, int characterY, int itemX, int itemY) {
+        int answer = 0;
+        return answer;
+    }
+}"
+카운트 다운,"target | result
+--- | ---
+21 | [1,0]
+58 | [2,2]","class Solution {
+    public int[] solution(int target) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+표 병합,"commands | 효과
+--- | ---
+UPDATE 1 1 menu | (1,1)에""menu""입력
+UPDATE 1 2 category | (1,2)에""category""입력
+UPDATE 2 1 bibimbap | (2,1)에""bibimbap""입력
+UPDATE 2 2 korean | (2,2)에""korean""입력
+UPDATE 2 3 rice | (2,3)에""rice""입력
+UPDATE 3 1 ramyeon | (3,1)에""ramyeon""입력
+UPDATE 3 2 korean | (3,2)에""korean""입력
+UPDATE 3 3 noodle | (3,3)에""noodle""입력
+UPDATE 3 4 instant | (3,4)에""instant""입력
+UPDATE 4 1 pasta | (4,1)에""pasta""입력
+UPDATE 4 2 italian | (4,2)에""italian""입력
+UPDATE 4 3 noodle | (4,3)에""noodle""입력
+
+commands | 효과
+--- | ---
+MERGE 1 2 1 3 | (1,2)와 (1,3) 병합
+MERGE 1 3 1 4 | (1,3)과 (1,4) 병합
+
+commands | 효과
+--- | ---
+UPDATE korean hansik | ""korean""을""hansik""으로 변경
+UPDATE 1 3 group | (1,3) 위치의 셀 값을""group""으로 변경
+
+commands | 효과
+--- | ---
+UNMERGE 1 4 | 셀 병합 해제 후 원래 값은 (1,4)가 가짐
+
+commands | result
+--- | ---
+[""UPDATE 1 1 menu"", ""UPDATE 1 2 category"", ""UPDATE 2 1 bibimbap"", ""UPDATE 2 2 korean"", ""UPDATE 2 3 rice"", ""UPDATE 3 1 ramyeon"", ""UPDATE 3 2 korean"", ""UPDATE 3 3 noodle"", ""UPDATE 3 4 instant"", ""UPDATE 4 1 pasta"", ""UPDATE 4 2 italian"", ""UPDATE 4 3 noodle"", ""MERGE 1 2 1 3"", ""MERGE 1 3 1 4"", ""UPDATE korean hansik"", ""UPDATE 1 3 group"", ""UNMERGE 1 4"", ""PRINT 1 3"", ""PRINT 1 4""] | [""EMPTY"", ""group""]
+[""UPDATE 1 1 a"", ""UPDATE 1 2 b"", ""UPDATE 2 1 c"", ""UPDATE 2 2 d"", ""MERGE 1 1 1 2"", ""MERGE 2 2 2 1"", ""MERGE 2 1 1 1"", ""PRINT 1 1"", ""UNMERGE 2 2"", ""PRINT 1 1""] | [""d"", ""EMPTY""]","class Solution {
+    public String[] solution(String[] commands) {
+        String[] answer = {};
+        return answer;
+    }
+}"
+완전범죄,"그룹 | 총점 | 테스트 케이스 그룹 설명
+--- | --- | ---
+#1 | 15% | info[i][1]= 1
+#2 | 40% | info의 길이 ≤ 20
+#3 | 45% | 추가 제한 사항 없음
+
+info | n | m | result
+--- | --- | --- | ---
+[[1, 2], [2, 3], [2, 1]] | 4 | 4 | 2
+[[1, 2], [2, 3], [2, 1]] | 1 | 7 | 0
+[[3, 3], [3, 3]] | 7 | 1 | 6
+[[3, 3], [3, 3]] | 6 | 1 | -1","class Solution {
+    public int solution(int[][] info, int n, int m) {
+        int answer = 0;
+        return answer;
+    }
+}"
+카카오프렌즈 컬러링북,"m | n | picture | answer
+--- | --- | --- | ---
+6 | 4 | [[1, 1, 1, 0], [1, 2, 2, 0], [1, 0, 0, 1], [0, 0, 0, 1], [0, 0, 0, 3], [0, 0, 0, 3]] | [4, 5]","class Solution {
+    public int[] solution(int m, int n, int[][] picture) {
+        int numberOfArea = 0;
+        int maxSizeOfOneArea = 0;
+
+        int[] answer = new int[2];
+        answer[0] = numberOfArea;
+        answer[1] = maxSizeOfOneArea;
+        return answer;
+    }
+}"
+선입 선출 스케줄링,"n | cores | result
+--- | --- | ---
+6 | [1,2,3] | 2","class Solution {
+    public int solution(int n, int[] cores) {
+        int answer = 0;
+        return answer;
+    }
+}"
+징검다리,"제거한 바위의 위치 | 각 바위 사이의 거리 | 거리의 최솟값
+--- | --- | ---
+[21, 17] | [2, 9, 3, 11] | 2
+[2, 21] | [11, 3, 3, 8] | 3
+[2, 11] | [14, 3, 4, 4] | 3
+[11, 21] | [2, 12, 3, 8] | 2
+[2, 14] | [11, 6, 4, 4] | 4
+
+distance | rocks | n | return
+--- | --- | --- | ---
+25 | [2, 14, 11, 21, 17] | 2 | 4","class Solution {
+    public int solution(int distance, int[] rocks, int n) {
+        int answer = 0;
+        return answer;
+    }
+}"
+가장 많이 받은 선물,"friends | gifts | result
+--- | --- | ---
+[""muzi"", ""ryan"", ""frodo"", ""neo""] | [""muzi frodo"", ""muzi frodo"", ""ryan muzi"", ""ryan muzi"", ""ryan muzi"", ""frodo muzi"", ""frodo ryan"", ""neo muzi""] | 2
+[""joy"", ""brad"", ""alessandro"", ""conan"", ""david""] | [""alessandro brad"", ""alessandro joy"", ""alessandro conan"", ""david alessandro"", ""alessandro david""] | 4
+[""a"", ""b"", ""c""] | [""a b"", ""b a"", ""c a"", ""a c"", ""a c"", ""c a""] | 0
+
+↓준 사람 \ 받은 사람→ | muzi | ryan | frodo | neo
+--- | --- | --- | --- | ---
+muzi | - | 0 | 2 | 0
+ryan | 3 | - | 0 | 0
+frodo | 1 | 1 | - | 0
+neo | 1 | 0 | 0 | -
+
+이름 | 준 선물 | 받은 선물 | 선물 지수
+--- | --- | --- | ---
+muzi | 2 | 5 | -3
+ryan | 3 | 1 | 2
+frodo | 2 | 2 | 0
+neo | 1 | 0 | 1
+
+↓준 사람 \ 받은 사람→ | joy | brad | alessandro | conan | david
+--- | --- | --- | --- | --- | ---
+joy | - | 0 | 0 | 0 | 0
+brad | 0 | - | 0 | 0 | 0
+alessandro | 1 | 1 | - | 1 | 1
+conan | 0 | 0 | 0 | - | 0
+david | 0 | 0 | 1 | 0 | -
+
+이름 | 준 선물 | 받은 선물 | 선물 지수
+--- | --- | --- | ---
+joy | 0 | 1 | -1
+brad | 0 | 1 | -1
+alessandro | 4 | 1 | 3
+conan | 0 | 1 | -1
+david | 1 | 1 | 0","class Solution {
+    public int solution(String[] friends, String[] gifts) {
+        int answer = 0;
+        return answer;
+    }
+}"
+3 x n 타일링,"n | result
+--- | ---
+4 | 11","class Solution {
+    public int solution(int n) {
+        int answer = 0;
+        return answer;
+    }
+}"
+2차원 동전 뒤집기,"beginning | target | result
+--- | --- | ---
+[[0, 1, 0, 0, 0], [1, 0, 1, 0, 1], [0, 1, 1, 1, 0], [1, 0, 1, 1, 0], [0, 1, 0, 1, 0]] | [[0, 0, 0, 1, 1], [0, 0, 0, 0, 1], [0, 0, 1, 0, 1], [0, 0, 0, 1, 0], [0, 0, 0, 0, 1]] | 5
+[[0, 0, 0], [0, 0, 0], [0, 0, 0]] | [[1, 0, 1], [0, 0, 0], [0, 0, 0]] | -1","class Solution {
+    public int solution(int[][] beginning, int[][] target) {
+        int answer = 0;
+        return answer;
+    }
+}"
+최적의 행렬 곱셈,"matrix_sizes | result
+--- | ---
+[[5,3],[3,10],[10,6]] | 270","class Solution {
+    public int solution(int[][] matrix_sizes) {
+        int answer = 0;
+        return answer;
+    }
+}"
+블록 이동하기,"board | result
+--- | ---
+[[0, 0, 0, 1, 1],[0, 0, 0, 1, 0],[0, 1, 0, 1, 1],[1, 1, 0, 0, 1],[0, 0, 0, 0, 0]] | 7","class Solution {
+    public int solution(int[][] board) {
+        int answer = 0;
+        return answer;
+    }
+}"
+모두 0으로 만들기,"a | edges | result
+--- | --- | ---
+[-5,0,2,1,2] | [[0,1],[3,4],[2,3],[0,3]] | 9
+[0,1,0] | [[0,1],[1,2]] | -1","class Solution {
+    public long solution(int[] a, int[][] edges) {
+        long answer = -2;
+        return answer;
+    }
+}"
+봉인된 주문,"n | bans | result
+--- | --- | ---
+30 | [""d"", ""e"", ""bb"", ""aa"", ""ae""] | ""ah""
+7388 | [""gqk"", ""kdn"", ""jxj"", ""jxi"", ""fug"", ""jxg"", ""ewq"", ""len"", ""bhc""] | ""jxk""
+
+그룹 | 총점 | 추가 제한 사항
+--- | --- | ---
+#1 | 15% | n≤ 1,000,bans의 길이 ≤ 100
+#2 | 15% | n≤ 1,000,000
+#3 | 70% | 추가 제한 사항 없음","class Solution {
+    public String solution(long n, String[] bans) {
+        String answer = """";
+        return answer;
+    }
+}"
+산 모양 타일링,"n | tops | result
+--- | --- | ---
+4 | [1, 1, 0, 1] | 149
+2 | [0, 1] | 11
+10 | [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] | 7704","class Solution {
+    public int solution(int n, int[] tops) {
+        int answer = 0;
+        return answer;
+    }
+}"

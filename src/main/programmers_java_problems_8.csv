@@ -1,0 +1,761 @@
+﻿문제제목,입출력 예,자바파일
+문자열 나누기,"s | result
+--- | ---
+""banana"" | 3
+""abracadabra"" | 6
+""aaabbaccccabba"" | 3","class Solution {
+    public int solution(String s) {
+        int answer = 0;
+        return answer;
+    }
+}"
+둘만의 암호,"s | skip | index | result
+--- | --- | --- | ---
+""aukks"" | ""wbqd"" | 5 | ""happy""","class Solution {
+    public String solution(String s, String skip, int index) {
+        String answer = """";
+        return answer;
+    }
+}"
+대충 만든 자판,"keymap | targets | result
+--- | --- | ---
+[""ABACD"", ""BCEFD""] | [""ABCD"",""AABB""] | [9, 4]
+[""AA""] | [""B""] | [-1]
+[""AGZ"", ""BSSS""] | [""ASA"",""BGZ""] | [4, 6]","class Solution {
+    public int[] solution(String[] keymap, String[] targets) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+[PCCE 기출문제] 9번 / 이웃한 칸,"board | h | w | result
+--- | --- | --- | ---
+[[""blue"", ""red"", ""orange"", ""red""], [""red"", ""red"", ""blue"", ""orange""], [""blue"", ""orange"", ""red"", ""red""], [""orange"", ""orange"", ""red"", ""blue""]] | 1 | 1 | 2
+[[""yellow"", ""green"", ""blue""], [""blue"", ""green"", ""yellow""], [""yellow"", ""blue"", ""blue""]] | 0 | 1 | 1","class Solution {
+    public int solution(String[][] board, int h, int w) {
+        int answer = 0;
+        return answer;
+    }
+}"
+숫자 게임,"A | B | result
+--- | --- | ---
+[5,1,3,7] | [2,2,6,8] | 3
+[2,2,2,2] | [1,1,1,1] | 0","class Solution {
+    public int solution(int[] A, int[] B) {
+        int answer = -1;
+        return answer;
+    }
+}"
+[1차] 다트 게임,"예제 | dartResult | answer | 설명
+--- | --- | --- | ---
+1 | 1S2D*3T | 37 | 11* 2 + 22* 2 + 33
+2 | 1D2S#10S | 9 | 12+ 21* (-1) + 101
+3 | 1D2S0T | 3 | 12+ 21+ 03
+4 | 1S*2T*3S | 23 | 11* 2 * 2 + 23* 2 + 31
+5 | 1D#2S*3S | 5 | 12* (-1) * 2 + 21* 2 + 31
+6 | 1T2D3D# | -4 | 13+ 22+ 32* (-1)
+7 | 1D2S3T* | 59 | 12+ 21* 2 + 33* 2","class Solution {
+    public int solution(String dartResult) {
+        int answer = 0;
+        return answer;
+    }
+}"
+완주하지 못한 선수,"participant | completion | return
+--- | --- | ---
+[""leo"", ""kiki"", ""eden""] | [""eden"", ""kiki""] | ""leo""
+[""marina"", ""josipa"", ""nikola"", ""vinko"", ""filipa""] | [""josipa"", ""filipa"", ""marina"", ""nikola""] | ""vinko""
+[""mislav"", ""stanko"", ""mislav"", ""ana""] | [""stanko"", ""ana"", ""mislav""] | ""mislav""","class Solution {
+    public String solution(String[] participant, String[] completion) {
+        String answer = """";
+        return answer;
+    }
+}"
+로또의 최고 순위와 최저 순위,"순위 | 당첨 내용
+--- | ---
+1 | 6개 번호가 모두 일치
+2 | 5개 번호가 일치
+3 | 4개 번호가 일치
+4 | 3개 번호가 일치
+5 | 2개 번호가 일치
+6(낙첨) | 그 외
+
+당첨 번호 | 31 | 10 | 45 | 1 | 6 | 19 | 결과
+--- | --- | --- | --- | --- | --- | --- | ---
+최고 순위 번호 | 31 | 0→10 | 44 | 1 | 0→6 | 25 | 4개 번호 일치, 3등
+최저 순위 번호 | 31 | 0→11 | 44 | 1 | 0→7 | 25 | 2개 번호 일치, 5등
+
+lottos | win_nums | result
+--- | --- | ---
+[44, 1, 0, 0, 31, 25] | [31, 10, 45, 1, 6, 19] | [3, 5]
+[0, 0, 0, 0, 0, 0] | [38, 19, 20, 40, 15, 25] | [1, 6]
+[45, 4, 35, 20, 3, 9] | [20, 9, 3, 45, 4, 35] | [1, 1]
+
+당첨 번호 | 38 | 19 | 20 | 40 | 15 | 25 | 결과
+--- | --- | --- | --- | --- | --- | --- | ---
+최고 순위 번호 | 0→38 | 0→19 | 0→20 | 0→40 | 0→15 | 0→25 | 6개 번호 일치, 1등
+최저 순위 번호 | 0→21 | 0→22 | 0→23 | 0→24 | 0→26 | 0→27 | 0개 번호 일치, 6등","class Solution {
+    public int[] solution(int[] lottos, int[] win_nums) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+2 x n 타일링,"n | result
+--- | ---
+4 | 5","class Solution {
+    public int solution(int n) {
+        int answer = 0;
+        return answer;
+    }
+}"
+[3차] 파일명 정렬,"파일명 | HEAD | NUMBER | TAIL
+--- | --- | --- | ---
+foo9.txt | foo | 9 | .txt
+foo010bar020.zip | foo | 010 | bar020.zip
+F-15 | F- | 15 | (빈 문자열)","class Solution {
+    public String[] solution(String[] files) {
+        String[] answer = {};
+        return answer;
+    }
+}"
+체육복,"n | lost | reserve | return
+--- | --- | --- | ---
+5 | [2, 4] | [1, 3, 5] | 5
+5 | [2, 4] | [3] | 4
+3 | [3] | [1] | 2","class Solution {
+    public int solution(int n, int[] lost, int[] reserve) {
+        int answer = 0;
+        return answer;
+    }
+}"
+단속카메라,"routes | return
+--- | ---
+[[-20,-15], [-14,-5], [-18,-13], [-5,-3]] | 2","class Solution {
+    public int solution(int[][] routes) {
+        int answer = 0;
+        return answer;
+    }
+}"
+오픈채팅방 ,"record | result
+--- | ---
+[""Enter uid1234 Muzi"", ""Enter uid4567 Prodo"",""Leave uid1234"",""Enter uid1234 Prodo"",""Change uid4567 Ryan""] | [""Prodo님이 들어왔습니다."", ""Ryan님이 들어왔습니다."", ""Prodo님이 나갔습니다."", ""Prodo님이 들어왔습니다.""]","class Solution {
+    public String[] solution(String[] record) {
+        String[] answer = {};
+        return answer;
+    }
+}"
+햄버거 만들기,"ingredient | result
+--- | ---
+[2, 1, 1, 2, 3, 1, 2, 3, 1] | 2
+[1, 3, 2, 1, 2, 1, 3, 1, 2] | 0","class Solution {
+    public int solution(int[] ingredient) {
+        int answer = 0;
+        return answer;
+    }
+}"
+최고의 집합,"n | s | result
+--- | --- | ---
+2 | 9 | [4, 5]
+2 | 1 | [-1]
+2 | 8 | [4, 4]","class Solution {
+    public int[] solution(int n, int s) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+기지국 설치,"N | stations | W | answer
+--- | --- | --- | ---
+11 | [4, 11] | 1 | 3
+16 | [9] | 2 | 3","class Solution {
+    public int solution(int n, int[] stations, int w) {
+        int answer = 0;
+
+        // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
+        System.out.println(""Hello Java"");
+
+        return answer;
+    }
+}"
+[1차] 프렌즈4블록,"m | n | board | answer
+--- | --- | --- | ---
+4 | 5 | [""CCBDE"", ""AAADE"", ""AAABF"", ""CCBBF""] | 14
+6 | 6 | [""TTTANT"", ""RRFACC"", ""RRRFCC"", ""TRRRAA"", ""TTMMMF"", ""TMMTTJ""] | 15","class Solution {
+    public int solution(int m, int n, String[] board) {
+        int answer = 0;
+        return answer;
+    }
+}"
+숫자 짝꿍,"X | Y | result
+--- | --- | ---
+""100"" | ""2345"" | ""-1""
+""100"" | ""203045"" | ""0""
+""100"" | ""123450"" | ""10""
+""12321"" | ""42531"" | ""321""
+""5525"" | ""1255"" | ""552""","class Solution {
+    public String solution(String X, String Y) {
+        String answer = """";
+        return answer;
+    }
+}"
+베스트앨범,"genres | plays | return
+--- | --- | ---
+[""classic"", ""pop"", ""classic"", ""classic"", ""pop""] | [500, 600, 150, 800, 2500] | [4, 1, 3, 0]","class Solution {
+    public int[] solution(String[] genres, int[] plays) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+가장 큰 수,"numbers | return
+--- | ---
+[6, 10, 2] | ""6210""
+[3, 30, 34, 5, 9] | ""9534330""","class Solution {
+    public String solution(int[] numbers) {
+        String answer = """";
+        return answer;
+    }
+}"
+소수 찾기,"numbers | return
+--- | ---
+""17"" | 3
+""011"" | 2","class Solution {
+    public int solution(String numbers) {
+        int answer = 0;
+        return answer;
+    }
+}"
+2개 이하로 다른 비트,"수 | 비트 | 다른 비트의 개수
+--- | --- | ---
+2 | 000...0010 | 
+3 | 000...0011 | 1
+
+수 | 비트 | 다른 비트의 개수
+--- | --- | ---
+7 | 000...0111 | 
+8 | 000...1000 | 4
+9 | 000...1001 | 3
+10 | 000...1010 | 3
+11 | 000...1011 | 2
+
+numbers | result
+--- | ---
+[2,7] | [3,11]","class Solution {
+    public long[] solution(long[] numbers) {
+        long[] answer = {};
+        return answer;
+    }
+}"
+두 큐 합 같게 만들기,"queue1 | queue2 | result
+--- | --- | ---
+[3, 2, 7, 2] | [4, 6, 5, 1] | 2
+[1, 2, 1, 2] | [1, 10, 1, 2] | 7
+[1, 1] | [1, 5] | -1","class Solution {
+    public int solution(int[] queue1, int[] queue2) {
+        int answer = -2;
+        return answer;
+    }
+}"
+다리를 지나는 트럭,"경과 시간 | 다리를 지난 트럭 | 다리를 건너는 트럭 | 대기 트럭
+--- | --- | --- | ---
+0 | [] | [] | [7,4,5,6]
+1~2 | [] | [7] | [4,5,6]
+3 | [7] | [4] | [5,6]
+4 | [7] | [4,5] | [6]
+5 | [7,4] | [5] | [6]
+6~7 | [7,4,5] | [6] | []
+8 | [7,4,5,6] | [] | []
+
+bridge_length | weight | truck_weights | return
+--- | --- | --- | ---
+2 | 10 | [7,4,5,6] | 8
+100 | 100 | [10] | 101
+100 | 100 | [10,10,10,10,10,10,10,10,10,10] | 110","class Solution {
+    public int solution(int bridge_length, int weight, int[] truck_weights) {
+        int answer = 0;
+        return answer;
+    }
+}"
+큰 수 만들기,"number | k | return
+--- | --- | ---
+""1924"" | 2 | ""94""
+""1231234"" | 3 | ""3234""
+""4177252841"" | 4 | ""775841""","class Solution {
+    public String solution(String number, int k) {
+        String answer = """";
+        return answer;
+    }
+}"
+쿼드압축 후 개수 세기,"arr | result
+--- | ---
+[[1,1,0,0],[1,0,0,0],[1,0,0,1],[1,1,1,1]] | [4,9]
+[[1,1,1,1,1,1,1,1],[0,1,1,1,1,1,1,1],[0,0,0,0,1,1,1,1],[0,1,0,0,1,1,1,1],[0,0,0,0,0,0,1,1],[0,0,0,0,0,0,0,1],[0,0,0,0,1,0,0,1],[0,0,0,0,1,1,1,1]] | [10,15]","class Solution {
+    public int[] solution(int[][] arr) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+연속된 부분 수열의 합,"sequence | k | result
+--- | --- | ---
+[1, 2, 3, 4, 5] | 7 | [2, 3]
+[1, 1, 1, 2, 3, 4, 5] | 5 | [6, 6]
+[2, 2, 2, 2, 2] | 6 | [0, 2]","class Solution {
+    public int[] solution(int[] sequence, int k) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+[PCCE 기출문제] 10번 / 데이터 분석,"code | date | maximum | remain
+--- | --- | --- | ---
+1 | 20300104 | 100 | 80
+2 | 20300804 | 847 | 37
+3 | 20300401 | 10 | 8
+
+data | ext | val_ext | sort_by | result
+--- | --- | --- | --- | ---
+[[1, 20300104, 100, 80], [2, 20300804, 847, 37], [3, 20300401, 10, 8]] | ""date"" | 20300501 | ""remain"" | [[3,20300401,10,8],[1,20300104,100,80]]","class Solution {
+    public int[][] solution(int[][] data, String ext, int val_ext, String sort_by) {
+        int[][] answer = {};
+        return answer;
+    }
+}"
+스티커 모으기(2),"sticker | answer
+--- | ---
+[14, 6, 5, 11, 3, 9, 2, 10] | 36
+[1, 3, 2, 5, 4] | 8","class Solution {
+    public int solution(int sticker[]) {
+        int answer = 0;
+
+        // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
+        System.out.println(""Hello Java"");
+
+        return answer;
+    }
+}"
+크레인 인형뽑기 게임,"board | moves | result
+--- | --- | ---
+[[0,0,0,0,0],[0,0,1,0,3],[0,2,5,0,1],[4,2,4,4,2],[3,5,1,3,1]] | [1,5,3,5,1,2,1,4] | 4","class Solution {
+    public int solution(int[][] board, int[] moves) {
+        int answer = 0;
+        return answer;
+    }
+}"
+삼각 달팽이,"n | result
+--- | ---
+4 | [1,2,9,3,10,8,4,5,6,7]
+5 | [1,2,12,3,13,11,4,14,15,10,5,6,7,8,9]
+6 | [1,2,15,3,16,14,4,17,21,13,5,18,19,20,12,6,7,8,9,10,11]","class Solution {
+    public int[] solution(int n) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+전력망을 둘로 나누기,"n | wires | result
+--- | --- | ---
+9 | [[1,3],[2,3],[3,4],[4,5],[4,6],[4,7],[7,8],[7,9]] | 3
+4 | [[1,2],[2,3],[3,4]] | 0
+7 | [[1,2],[2,7],[3,7],[3,4],[4,5],[6,7]] | 1","class Solution {
+    public int solution(int n, int[][] wires) {
+        int answer = -1;
+        return answer;
+    }
+}"
+성격 유형 검사하기,"지표 번호 | 성격 유형
+--- | ---
+1번 지표 | 라이언형(R), 튜브형(T)
+2번 지표 | 콘형(C), 프로도형(F)
+3번 지표 | 제이지형(J), 무지형(M)
+4번 지표 | 어피치형(A), 네오형(N)
+
+선택지 | 성격 유형 점수
+--- | ---
+매우 비동의 | 네오형 3점
+비동의 | 네오형 2점
+약간 비동의 | 네오형 1점
+모르겠음 | 어떤 성격 유형도 점수를 얻지 않습니다
+약간 동의 | 어피치형 1점
+동의 | 어피치형 2점
+매우 동의 | 어피치형 3점
+
+choices | 뜻
+--- | ---
+1 | 매우 비동의
+2 | 비동의
+3 | 약간 비동의
+4 | 모르겠음
+5 | 약간 동의
+6 | 동의
+7 | 매우 동의
+
+survey | choices | result
+--- | --- | ---
+[""AN"", ""CF"", ""MJ"", ""RT"", ""NA""] | [5, 3, 2, 7, 5] | ""TCMA""
+[""TR"", ""RT"", ""TR""] | [7, 1, 3] | ""RCJA""
+
+선택지 | 성격 유형 점수
+--- | ---
+매우 비동의 | 어피치형 3점
+비동의 | 어피치형 2점
+약간 비동의 | 어피치형 1점
+모르겠음 | 어떤 성격 유형도 점수를 얻지 않습니다
+약간 동의 | 네오형 1점
+동의 | 네오형 2점
+매우 동의 | 네오형 3점
+
+선택지 | 성격 유형 점수
+--- | ---
+매우 비동의 | 콘형 3점
+비동의 | 콘형 2점
+약간 비동의 | 콘형 1점
+모르겠음 | 어떤 성격 유형도 점수를 얻지 않습니다
+약간 동의 | 프로도형 1점
+동의 | 프로도형 2점
+매우 동의 | 프로도형 3점
+
+선택지 | 성격 유형 점수
+--- | ---
+매우 비동의 | 무지형 3점
+비동의 | 무지형 2점
+약간 비동의 | 무지형 1점
+모르겠음 | 어떤 성격 유형도 점수를 얻지 않습니다
+약간 동의 | 제이지형 1점
+동의 | 제이지형 2점
+매우 동의 | 제이지형 3점
+
+선택지 | 성격 유형 점수
+--- | ---
+매우 비동의 | 라이언형 3점
+비동의 | 라이언형 2점
+약간 비동의 | 라이언형 1점
+모르겠음 | 어떤 성격 유형도 점수를 얻지 않습니다
+약간 동의 | 튜브형 1점
+동의 | 튜브형 2점
+매우 동의 | 튜브형 3점
+
+선택지 | 성격 유형 점수
+--- | ---
+매우 비동의 | 네오형 3점
+비동의 | 네오형 2점
+약간 비동의 | 네오형 1점
+모르겠음 | 어떤 성격 유형도 점수를 얻지 않습니다
+약간 동의 | 어피치형 1점
+동의 | 어피치형 2점
+매우 동의 | 어피치형 3점
+
+지표 번호 | 성격 유형 | 점수 | 성격 유형 | 점수
+--- | --- | --- | --- | ---
+1번 지표 | 라이언형(R) | 0 | 튜브형(T) | 3
+2번 지표 | 콘형(C) | 1 | 프로도형(F) | 0
+3번 지표 | 제이지형(J) | 0 | 무지형(M) | 2
+4번 지표 | 어피치형(A) | 1 | 네오형(N) | 1
+
+지표 번호 | 성격 유형 | 점수 | 성격 유형 | 점수
+--- | --- | --- | --- | ---
+1번 지표 | 라이언형(R) | 6 | 튜브형(T) | 1
+2번 지표 | 콘형(C) | 0 | 프로도형(F) | 0
+3번 지표 | 제이지형(J) | 0 | 무지형(M) | 0
+4번 지표 | 어피치형(A) | 0 | 네오형(N) | 0","class Solution {
+    public String solution(String[] survey, int[] choices) {
+        String answer = """";
+        return answer;
+    }
+}"
+평행,"dots | result
+--- | ---
+[[1, 4], [9, 2], [3, 8], [11, 6]] | 1
+[[3, 5], [4, 1], [2, 4], [5, 10]] | 0","class Solution {
+    public int solution(int[][] dots) {
+        int answer = 0;
+        return answer;
+    }
+}"
+시소 짝꿍,"weights | result
+--- | ---
+[100,180,360,100,270] | 4","class Solution {
+    public long solution(int[] weights) {
+        long answer = 0;
+        return answer;
+    }
+}"
+호텔 대실,"book_time | result
+--- | ---
+[[""15:00"", ""17:00""], [""16:40"", ""18:20""], [""14:20"", ""15:20""], [""14:10"", ""19:20""], [""18:20"", ""21:20""]] | 3
+[[""09:10"", ""10:10""], [""10:20"", ""12:20""]] | 1
+[[""10:20"", ""12:30""], [""10:20"", ""12:30""], [""10:20"", ""12:30""]] | 3","class Solution {
+    public int solution(String[][] book_time) {
+        int answer = 0;
+        return answer;
+    }
+}"
+미로 탈출,"maps | result
+--- | ---
+[""SOOOL"",""XXXXO"",""OOOOO"",""OXXXX"",""OOOOE""] | 16
+[""LOOXS"",""OOOOX"",""OOOOO"",""OOOOO"",""EOOOO""] | -1","class Solution {
+    public int solution(String[] maps) {
+        int answer = 0;
+        return answer;
+    }
+}"
+마법의 엘리베이터,"storey | result
+--- | ---
+16 | 6
+2554 | 16","class Solution {
+    public int solution(int storey) {
+        int answer = 0;
+        return answer;
+    }
+}"
+키패드 누르기,"numbers | hand | result
+--- | --- | ---
+[1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5] | ""right"" | ""LRLLLRLLRRL""
+[7, 0, 8, 2, 8, 3, 1, 5, 7, 6, 2] | ""left"" | ""LRLLRRLLLRR""
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 0] | ""right"" | ""LLRLLRLLRL""
+
+왼손 위치 | 오른손 위치 | 눌러야 할 숫자 | 사용한 손 | 설명
+--- | --- | --- | --- | ---
+* | # | 1 | L | 1은 왼손으로 누릅니다.
+1 | # | 3 | R | 3은 오른손으로 누릅니다.
+1 | 3 | 4 | L | 4는 왼손으로 누릅니다.
+4 | 3 | 5 | L | 왼손 거리는 1, 오른손 거리는 2이므로 왼손으로 5를 누릅니다.
+5 | 3 | 8 | L | 왼손 거리는 1, 오른손 거리는 3이므로 왼손으로 8을 누릅니다.
+8 | 3 | 2 | R | 왼손 거리는 2, 오른손 거리는 1이므로 오른손으로 2를 누릅니다.
+8 | 2 | 1 | L | 1은 왼손으로 누릅니다.
+1 | 2 | 4 | L | 4는 왼손으로 누릅니다.
+4 | 2 | 5 | R | 왼손 거리와 오른손 거리가 1로 같으므로, 오른손으로 5를 누릅니다.
+4 | 5 | 9 | R | 9는 오른손으로 누릅니다.
+4 | 9 | 5 | L | 왼손 거리는 1, 오른손 거리는 2이므로 왼손으로 5를 누릅니다.
+5 | 9 | - | - | ","class Solution {
+    public String solution(int[] numbers, String hand) {
+        String answer = """";
+        return answer;
+    }
+}"
+숫자 카드 나누기,"arrayA | arrayB | result
+--- | --- | ---
+[10, 17] | [5, 20] | 0
+[10, 20] | [5, 17] | 10
+[14, 35, 119] | [18, 30, 102] | 7","class Solution {
+    public int solution(int[] arrayA, int[] arrayB) {
+        int answer = 0;
+        return answer;
+    }
+}"
+서버 증설 횟수,"시각 | 게임 이용자의 수 | 증설된 서버의 수 | 증설 횟수
+--- | --- | --- | ---
+0 ~ 1 | 0 | 0 | 0
+1 ~ 2 | 2 | 0 | 0
+2 ~ 3 | 3 | 1 | 1
+3 ~ 4 | 3 | 1 | 0
+4 ~ 5 | 1 | 1 | 0
+5 ~ 6 | 2 | 1 | 0
+6 ~ 7 | 0 | 1 | 0
+7 ~ 8 | 0 | 0 | 0
+8 ~ 9 | 0 | 0 | 0
+9 ~ 10 | 0 | 0 | 0
+10 ~ 11 | 4 | 1 | 1
+11 ~ 12 | 2 | 1 | 0
+12 ~ 13 | 0 | 1 | 0
+13 ~ 14 | 6 | 2 | 1
+14 ~ 15 | 0 | 2 | 0
+15 ~ 16 | 4 | 1 | 0
+16 ~ 17 | 2 | 1 | 0
+17 ~ 18 | 13 | 4 | 3
+18 ~ 19 | 3 | 3 | 0
+19 ~ 20 | 5 | 3 | 0
+20 ~ 21 | 10 | 3 | 0
+21 ~ 22 | 0 | 3 | 0
+22 ~ 23 | 1 | 0 | 0
+23 ~ 24 | 5 | 1 | 1
+
+그룹 | 총점 | 추가 제한 사항
+--- | --- | ---
+#1 | 5% | m =1, k =1
+#2 | 7% | k =1
+#3 | 88% | 추가 제한 사항 없음
+
+players | m | k | result
+--- | --- | --- | ---
+[0, 2, 3, 3, 1, 2, 0, 0, 0, 0, 4, 2, 0, 6, 0, 4, 2, 13, 3, 5, 10, 0, 1, 5] | 3 | 5 | 7
+[0, 0, 0, 10, 0, 12, 0, 15, 0, 1, 0, 1, 0, 0, 0, 5, 0, 0, 11, 0, 8, 0, 0, 0] | 5 | 1 | 11
+[0, 0, 0, 0, 0, 2, 0, 0, 0, 1, 0, 5, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1] | 1 | 1 | 12","class Solution {
+    public int solution(int[] players, int m, int k) {
+        int answer = 0;
+        return answer;
+    }
+}"
+배달,"N | road | K | result
+--- | --- | --- | ---
+5 | [[1,2,1],[2,3,3],[5,2,2],[1,4,2],[5,3,1],[5,4,2]] | 3 | 4
+6 | [[1,2,1],[1,3,2],[2,3,2],[3,4,3],[3,5,2],[3,5,3],[5,6,1]] | 4 | 4","class Solution {
+    public int solution(int N, int[][] road, int K) {
+        int answer = 0;
+
+        // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
+        System.out.println(""Hello Java"");
+
+        return answer;
+    }
+}"
+불량 사용자,"응모자 아이디
+---
+frodo
+fradi
+crodo
+abc123
+frodoc
+
+불량 사용자
+---
+fr*d*
+abc1**
+
+제재 아이디
+---
+frodo
+abc123
+
+제재 아이디
+---
+fradi
+abc123
+
+user_id | banned_id | result
+--- | --- | ---
+[""frodo"", ""fradi"", ""crodo"", ""abc123"", ""frodoc""] | [""fr*d*"", ""abc1**""] | 2
+[""frodo"", ""fradi"", ""crodo"", ""abc123"", ""frodoc""] | [""*rodo"", ""*rodo"", ""******""] | 2
+[""frodo"", ""fradi"", ""crodo"", ""abc123"", ""frodoc""] | [""fr*d*"", ""*rodo"", ""******"", ""******""] | 3
+
+제재 아이디
+---
+frodo
+crodo
+abc123
+
+제재 아이디
+---
+frodo
+crodo
+frodoc
+
+제재 아이디
+---
+frodo
+crodo
+abc123
+frodoc
+
+제재 아이디
+---
+fradi
+crodo
+abc123
+frodoc
+
+제재 아이디
+---
+fradi
+frodo
+abc123
+frodoc","class Solution {
+    public int solution(String[] user_id, String[] banned_id) {
+        int answer = 0;
+        return answer;
+    }
+}"
+신규 아이디 추천,"no | new_id | result
+--- | --- | ---
+예1 | ""...!@BaT#*..y.abcdefghijklm"" | ""bat.y.abcdefghi""
+예2 | ""z-+.^."" | ""z--""
+예3 | ""=.="" | ""aaa""
+예4 | ""123_.def"" | ""123_.def""
+예5 | ""abcdefghijklmn.p"" | ""abcdefghijklmn""","class Solution {
+    public String solution(String new_id) {
+        String answer = """";
+        return answer;
+    }
+}"
+바탕화면 정리,"wallpaper | result
+--- | ---
+["".#..."", ""..#.."", ""...#.""] | [0, 1, 3, 4]
+["".........."", "".....#...."", ""......##.."", ""...##....."", ""....#.....""] | [1, 3, 5, 8]
+["".##...##."", ""#..#.#..#"", ""#...#...#"", "".#.....#."", ""..#...#.."", ""...#.#..."", ""....#....""] | [0, 0, 7, 9]
+["".."", ""#.""] | [1, 0, 2, 1]","class Solution {
+    public int[] solution(String[] wallpaper) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+보석 쇼핑,"진열대 번호 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8
+--- | --- | --- | --- | --- | --- | --- | --- | ---
+보석 이름 | DIA | RUBY | RUBY | DIA | DIA | EMERALD | SAPPHIRE | DIA
+
+gems | result
+--- | ---
+[""DIA"", ""RUBY"", ""RUBY"", ""DIA"", ""DIA"", ""EMERALD"", ""SAPPHIRE"", ""DIA""] | [3, 7]
+[""AA"", ""AB"", ""AC"", ""AA"", ""AC""] | [1, 3]
+[""XYZ"", ""XYZ"", ""XYZ""] | [1, 1]
+[""ZZZ"", ""YYY"", ""NNNN"", ""YYY"", ""BBB""] | [1, 5]","class Solution {
+    public int[] solution(String[] gems) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+메뉴 리뉴얼,"손님 번호 | 주문한 단품메뉴 조합
+--- | ---
+1번 손님 | A, B, C, F, G
+2번 손님 | A, C
+3번 손님 | C, D, E
+4번 손님 | A, C, D, E
+5번 손님 | B, C, F, G
+6번 손님 | A, C, D, E, H
+
+코스 종류 | 메뉴 구성 | 설명
+--- | --- | ---
+요리 2개 코스 | A, C | 1번, 2번, 4번, 6번 손님으로부터 총 4번 주문됐습니다.
+요리 3개 코스 | C, D, E | 3번, 4번, 6번 손님으로부터 총 3번 주문됐습니다.
+요리 4개 코스 | B, C, F, G | 1번, 5번 손님으로부터 총 2번 주문됐습니다.
+요리 4개 코스 | A, C, D, E | 4번, 6번 손님으로부터 총 2번 주문됐습니다.
+
+orders | course | result
+--- | --- | ---
+[""ABCFG"", ""AC"", ""CDE"", ""ACDE"", ""BCFG"", ""ACDEH""] | [2,3,4] | [""AC"", ""ACDE"", ""BCFG"", ""CDE""]
+[""ABCDE"", ""AB"", ""CD"", ""ADE"", ""XYZ"", ""XYZ"", ""ACD""] | [2,3,5] | [""ACD"", ""AD"", ""ADE"", ""CD"", ""XYZ""]
+[""XYZ"", ""XWY"", ""WXA""] | [2,3,4] | [""WX"", ""XY""]","class Solution {
+    public String[] solution(String[] orders, int[] course) {
+        String[] answer = {};
+        return answer;
+    }
+}"
+124 나라의 숫자,"10진법 | 124 나라 | 10진법 | 124 나라
+--- | --- | --- | ---
+1 | 1 | 6 | 14
+2 | 2 | 7 | 21
+3 | 4 | 8 | 22
+4 | 11 | 9 | 24
+5 | 12 | 10 | 41
+
+n | result
+--- | ---
+1 | 1
+2 | 2
+3 | 4
+4 | 11","class Solution {
+    public String solution(int n) {
+        String answer = """";
+        return answer;
+    }
+}"
+디펜스 게임,"n | k | enemy | result
+--- | --- | --- | ---
+7 | 3 | [4, 2, 4, 5, 3, 3, 1] | 5
+2 | 4 | [3, 3, 3, 3] | 4","class Solution {
+    public int solution(int n, int k, int[] enemy) {
+        int answer = 0;
+        return answer;
+    }
+}"
+리코쳇 로봇,"board | result
+--- | ---
+[""...D..R"", "".D.G..."", ""....D.D"", ""D....D."", ""..D....""] | 7
+["".D.R"", ""...."", "".G.."", ""...D""] | -1","class Solution {
+    public int solution(String[] board) {
+        int answer = 0;
+        return answer;
+    }
+}"
