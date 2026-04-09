@@ -1,0 +1,504 @@
+﻿문제제목,입출력 예,자바파일
+특수문자 출력하기,,"import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        
+    }
+}"
+문자열 내림차순으로 배치하기,"s | return
+--- | ---
+""Zbcdefg"" | ""gfedcbZ""","class Solution {
+    public String solution(String s) {
+        String answer = """";
+        return answer;
+    }
+}"
+부족한 금액 계산하기,"price | money | count | result
+--- | --- | --- | ---
+3 | 20 | 4 | 10","class Solution {
+    public long solution(int price, int money, int count) {
+        long answer = -1;
+
+        return answer;
+    }
+}"
+소인수분해,"n | result
+--- | ---
+12 | [2, 3]
+17 | [17]
+420 | [2, 3, 5, 7]","class Solution {
+    public int[] solution(int n) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+문자 개수 세기,"my_string | result
+--- | ---
+""Programmers"" | [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 2, 0, 1, 0, 0, 3, 1, 0, 0, 0, 0, 0, 0, 0]","class Solution {
+    public int[] solution(String my_string) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+문자열 여러 번 뒤집기,"my_string | queries | result
+--- | --- | ---
+""rermgorpsam"" | [[2, 3], [0, 7], [5, 9], [6, 10]] | ""programmers""
+
+queries | my_string
+--- | ---
+ | ""rermgorpsam""
+[2, 3] | ""remrgorpsam""
+[0, 7] | ""progrmersam""
+[5, 9] | ""prograsremm""
+[6, 10] | ""programmers""","class Solution {
+    public String solution(String my_string, int[][] queries) {
+        String answer = """";
+        return answer;
+    }
+}"
+배열 만들기 4,"arr | result
+--- | ---
+[1, 4, 2, 5, 3] | [1, 2, 3]
+
+i | arr[i] | stk
+--- | --- | ---
+0 | 1 | []
+1 | 4 | [1]
+2 | 2 | [1, 4]
+2 | 2 | [1]
+3 | 5 | [1, 2]
+4 | 3 | [1, 2, 5]
+4 | 3 | [1, 2]
+- | - | [1, 2, 3]","class Solution {
+    public int[] solution(int[] arr) {
+        int[] stk = {};
+        return stk;
+    }
+}"
+조건 문자열,"ineq | eq | n | m | result
+--- | --- | --- | --- | ---
+""<"" | ""="" | 20 | 50 | 1
+"">"" | ""!"" | 41 | 78 | 0","class Solution {
+    public int solution(String ineq, String eq, int n, int m) {
+        int answer = 0;
+        return answer;
+    }
+}"
+[PCCE 기출문제] 5번 / 산책,"route | result
+--- | ---
+""NSSNEWWN"" | [-1, 1]
+""EESEEWNWSNWWNS"" | [0, 0]",
+공 던지기,"numbers | k | result
+--- | --- | ---
+[1, 2, 3, 4] | 2 | 3
+[1, 2, 3, 4, 5, 6] | 5 | 3
+[1, 2, 3] | 3 | 2","class Solution {
+    public int solution(int[] numbers, int k) {
+        int answer = 0;
+        return answer;
+    }
+}"
+이진수 더하기,"bin1 | bin2 | result
+--- | --- | ---
+""10"" | ""11"" | ""101""
+""1001"" | ""1111"" | ""11000""","class Solution {
+    public String solution(String bin1, String bin2) {
+        String answer = """";
+        return answer;
+    }
+}"
+문자열 계산하기,"my_string | result
+--- | ---
+""3 + 4"" | 7","class Solution {
+    public int solution(String my_string) {
+        int answer = 0;
+        return answer;
+    }
+}"
+두 수의 합,"a | b | result
+--- | --- | ---
+""582"" | ""734"" | ""1316""
+""18446744073709551615"" | ""287346502836570928366"" | ""305793246910280479981""
+""0"" | ""0"" | ""0""","class Solution {
+    public String solution(String a, String b) {
+        String answer = """";
+        return answer;
+    }
+}"
+수열과 구간 쿼리 2,"arr | queries | result
+--- | --- | ---
+[0, 1, 2, 4, 3] | [[0, 4, 2],[0, 3, 2],[0, 2, 2]] | [3, 4, -1]","class Solution {
+    public int[] solution(int[] arr, int[][] queries) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+[PCCE 기출문제] 4번 / 저축,"1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12
+--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+28 | 34 | 40 | 46 | 52 | 58 | 64 | 70 | 78 | 86 | 94 | 102
+
+1 | 2
+--- | ---
+75 | 100",
+문자열 다루기 기본,"s | return
+--- | ---
+""a234"" | false
+""1234"" | true","class Solution {
+    public boolean solution(String s) {
+        boolean answer = true;
+        return answer;
+    }
+}"
+구슬을 나누는 경우의 수,"balls | share | result
+--- | --- | ---
+3 | 2 | 3
+5 | 3 | 10","class Solution {
+    public int solution(int balls, int share) {
+        int answer = 0;
+        return answer;
+    }
+}"
+삼각형의 완성조건 (2),"sides | result
+--- | ---
+[1, 2] | 1
+[3, 6] | 5
+[11, 7] | 13","class Solution {
+    public int solution(int[] sides) {
+        int answer = 0;
+        return answer;
+    }
+}"
+영어가 싫어요,"numbers | result
+--- | ---
+""onetwothreefourfivesixseveneightnine"" | 123456789
+""onefourzerosixseven"" | 14067","class Solution {
+    public long solution(String numbers) {
+        long answer = 0;
+        return answer;
+    }
+}"
+무작위로 K개의 수 뽑기,"arr | k | result
+--- | --- | ---
+[0, 1, 1, 2, 2, 3] | 3 | [0, 1, 2]
+[0, 1, 1, 1, 1] | 4 | [0, 1, -1, -1]","class Solution {
+    public int[] solution(int[] arr, int k) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+행렬의 덧셈,"arr1 | arr2 | return
+--- | --- | ---
+[[1,2],[2,3]] | [[3,4],[5,6]] | [[4,6],[7,9]]
+[[1],[2]] | [[3],[4]] | [[4],[6]]","class Solution {
+    public int[][] solution(int[][] arr1, int[][] arr2) {
+        int[][] answer = {};
+        return answer;
+    }
+}"
+그림 확대,"picture | k | result
+--- | --- | ---
+["".xx...xx."", ""x..x.x..x"", ""x...x...x"", "".x.....x."", ""..x...x.."", ""...x.x..."", ""....x....""] | 2 | [""..xxxx......xxxx.."", ""..xxxx......xxxx.."", ""xx....xx..xx....xx"", ""xx....xx..xx....xx"", ""xx......xx......xx"", ""xx......xx......xx"", ""..xx..........xx.."", ""..xx..........xx.."", ""....xx......xx...."", ""....xx......xx...."", ""......xx..xx......"", ""......xx..xx......"", ""........xx........"", ""........xx........""]
+[""x.x"", "".x."", ""x.x""] | 3 | [""xxx...xxx"", ""xxx...xxx"", ""xxx...xxx"", ""...xxx..."", ""...xxx..."", ""...xxx..."", ""xxx...xxx"", ""xxx...xxx"", ""xxx...xxx""]","class Solution {
+    public String[] solution(String[] picture, int k) {
+        String[] answer = {};
+        return answer;
+    }
+}"
+[PCCE 기출문제] 2번 / 피타고라스의 정리,,"import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int c = sc.nextInt();
+
+        int b_square = c - a;
+
+        System.out.println(b_square);
+    }
+}"
+[PCCE 기출문제] 4번 / 병과분류,"마지막 글자 | 병과
+--- | ---
+""_eye"" | ""Ophthalmologyc""
+""head"" | ""Neurosurgery""
+""infl"" | ""Orthopedics""
+""skin"" | ""Dermatology""",
+최댓값과 최솟값,"s | return
+--- | ---
+""1 2 3 4"" | ""1 4""
+""-1 -2 -3 -4"" | ""-4 -1""
+""-1 -1"" | ""-1 -1""","class Solution {
+    public String solution(String s) {
+        String answer = """";
+        return answer;
+    }
+}"
+JadenCase 문자열 만들기,"s | return
+--- | ---
+""3people unFollowed me"" | ""3people Unfollowed Me""
+""for the last week"" | ""For The Last Week""","class Solution {
+    public String solution(String s) {
+        String answer = """";
+        return answer;
+    }
+}"
+직사각형 별찍기,,"import java.util.Scanner;
+
+class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        System.out.println(a + b);
+    }
+}"
+정사각형으로 만들기,"arr | result
+--- | ---
+[[572, 22, 37], [287, 726, 384], [85, 137, 292], [487, 13, 876]] | [[572, 22, 37, 0], [287, 726, 384, 0], [85, 137, 292, 0], [487, 13, 876, 0]]
+[[57, 192, 534, 2], [9, 345, 192, 999]] | [[57, 192, 534, 2], [9, 345, 192, 999], [0, 0, 0, 0], [0, 0, 0, 0]]
+[[1, 2], [3, 4]] | [[1, 2], [3, 4]]","class Solution {
+    public int[][] solution(int[][] arr) {
+        int[][] answer = {};
+        return answer;
+    }
+}"
+문자열 겹쳐쓰기,"my_string | overwrite_string | s | result
+--- | --- | --- | ---
+""He11oWor1d"" | ""lloWorl"" | 2 | ""HelloWorld""
+""Program29b8UYP"" | ""merS123"" | 7 | ""ProgrammerS123""","class Solution {
+    public String solution(String my_string, String overwrite_string, int s) {
+        String answer = """";
+        return answer;
+    }
+}"
+a와 b 출력하기,,"import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        System.out.println(a + b);
+    }
+}"
+[PCCE 기출문제] 7번 / 가습기,"mode_type | humidity | val_set | result
+--- | --- | --- | ---
+""auto"" | 23 | 45 | 3
+""target"" | 41 | 40 | 1
+""minimum"" | 10 | 34 | 1",
+[PCCE 기출문제] 3번 / 나이 계산,,
+같은 숫자는 싫어,"arr | answer
+--- | ---
+[1,1,3,3,0,1,1] | [1,3,0,1]
+[4,4,4,3,3] | [4,3]","import java.util.*;
+
+public class Solution {
+    public int[] solution(int []arr) {
+        int[] answer = {};
+        
+        // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
+        System.out.println(""Hello Java"");
+
+        return answer;
+    }
+}"
+올바른 괄호,"s | answer
+--- | ---
+""()()"" | true
+""(())()"" | true
+"")()("" | false
+""(()("" | false","class Solution {
+    boolean solution(String s) {
+        boolean answer = true;
+
+        // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
+        System.out.println(""Hello Java"");
+
+        return answer;
+    }
+}"
+최대공약수와 최소공배수,"n | m | return
+--- | --- | ---
+3 | 12 | [3, 12]
+2 | 5 | [1, 10]","class Solution {
+    public int[] solution(int n, int m) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+최솟값 만들기,"A | B | answer
+--- | --- | ---
+[1, 4, 2] | [5, 4, 4] | 29
+[1,2] | [3,4] | 10","class Solution
+{
+    public int solution(int []A, int []B)
+    {
+        int answer = 0;
+
+        // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
+        System.out.println(""Hello Java"");
+
+        return answer;
+    }
+}"
+캐릭터의 좌표,"keyinput | board | result
+--- | --- | ---
+[""left"", ""right"", ""up"", ""right"", ""right""] | [11, 11] | [2, 1]
+[""down"", ""down"", ""down"", ""down"", ""down""] | [7, 9] | [0, -4]","class Solution {
+    public int[] solution(String[] keyinput, int[] board) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+종이 자르기,"M | N | result
+--- | --- | ---
+2 | 2 | 3
+2 | 5 | 9
+1 | 1 | 0","class Solution {
+    public int solution(int M, int N) {
+        int answer = 0;
+        return answer;
+    }
+}"
+크기가 작은 부분 문자열 ,"t | p | result
+--- | --- | ---
+""3141592"" | ""271"" | 2
+""500220839878"" | ""7"" | 8
+""10203"" | ""15"" | 3","class Solution {
+    public int solution(String t, String p) {
+        int answer = 0;
+        return answer;
+    }
+}"
+전국 대회 선발 고사,"rank | attendance | result
+--- | --- | ---
+[3, 7, 2, 5, 4, 6, 1] | [false, true, true, true, true, false, false] | 20403
+[1, 2, 3] | [true, true, true] | 102
+[6, 1, 5, 2, 3, 4] | [true, false, true, false, false, true] | 50200","class Solution {
+    public int solution(int[] rank, boolean[] attendance) {
+        int answer = 0;
+        return answer;
+    }
+}"
+예산,"d | budget | result
+--- | --- | ---
+[1,3,2,5,4] | 9 | 3
+[2,2,3,3] | 10 | 4","class Solution {
+    public int solution(int[] d, int budget) {
+        int answer = 0;
+        return answer;
+    }
+}"
+이진 변환 반복하기,"s | result
+--- | ---
+""110010101001"" | [3,8]
+""01110"" | [3,3]
+""1111111"" | [4,1]
+
+회차 | 이진 변환 이전 | 제거할 0의 개수 | 0 제거 후 길이 | 이진 변환 결과
+--- | --- | --- | --- | ---
+1 | ""110010101001"" | 6 | 6 | ""110""
+2 | ""110"" | 1 | 2 | ""10""
+3 | ""10"" | 1 | 1 | ""1""
+
+회차 | 이진 변환 이전 | 제거할 0의 개수 | 0 제거 후 길이 | 이진 변환 결과
+--- | --- | --- | --- | ---
+1 | ""01110"" | 2 | 3 | ""11""
+2 | ""11"" | 0 | 2 | ""10""
+3 | ""10"" | 1 | 1 | ""1""
+
+회차 | 이진 변환 이전 | 제거할 0의 개수 | 0 제거 후 길이 | 이진 변환 결과
+--- | --- | --- | --- | ---
+1 | ""1111111"" | 0 | 7 | ""111""
+2 | ""111"" | 0 | 3 | ""11""
+3 | ""11"" | 0 | 2 | ""10""
+4 | ""10"" | 1 | 1 | ""1""","class Solution {
+    public int[] solution(String s) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+직사각형 넓이 구하기,"dots | result
+--- | ---
+[[1, 1], [2, 1], [2, 2], [1, 2]] | 1
+[[-1, -1], [1, 1], [1, -1], [-1, 1]] | 4","class Solution {
+    public int solution(int[][] dots) {
+        int answer = 0;
+        return answer;
+    }
+}"
+외계어 사전,"spell | dic | result
+--- | --- | ---
+[""p"", ""o"", ""s""] | [""sod"", ""eocd"", ""qixm"", ""adio"", ""soo""] | 2
+[""z"", ""d"", ""x""] | [""def"", ""dww"", ""dzx"", ""loveaw""] | 1
+[""s"", ""o"", ""m"", ""d""] | [""moos"", ""dzx"", ""smm"", ""sunmmo"", ""som""] | 2","class Solution {
+    public int solution(String[] spell, String[] dic) {
+        int answer = 0;
+        return answer;
+    }
+}"
+로그인 성공?,"id_pw | db | result
+--- | --- | ---
+[""meosseugi"", ""1234""] | [[""rardss"", ""123""], [""yyoom"", ""1234""], [""meosseugi"", ""1234""]] | ""login""
+[""programmer01"", ""15789""] | [[""programmer02"", ""111111""], [""programmer00"", ""134""], [""programmer01"", ""1145""]] | ""wrong pw""
+[""rabbit04"", ""98761""] | [[""jaja11"", ""98761""], [""krong0313"", ""29440""], [""rabbit00"", ""111333""]] | ""fail""","class Solution {
+    public String solution(String[] id_pw, String[][] db) {
+        String answer = """";
+        return answer;
+    }
+}"
+삼총사,"number | result
+--- | ---
+[-2, 3, 0, 2, -5] | 2
+[-3, -2, -1, 0, 1, 2, 3] | 5
+[-1, 1, -1, 1] | 0","class Solution {
+    public int solution(int[] number) {
+        int answer = 0;
+        return answer;
+    }
+}"
+대소문자 바꿔서 출력하기,,"import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String a = sc.next();
+    }
+}"
+이상한 문자 만들기,"s | return
+--- | ---
+""try hello world"" | ""TrY HeLlO WoRlD""","class Solution {
+    public String solution(String s) {
+        String answer = """";
+        return answer;
+    }
+}"
+3진법 뒤집기,"n | result
+--- | ---
+45 | 7
+125 | 229
+
+n (10진법) | n (3진법) | 앞뒤 반전(3진법) | 10진법으로 표현
+--- | --- | --- | ---
+45 | 1200 | 0021 | 7
+
+n (10진법) | n (3진법) | 앞뒤 반전(3진법) | 10진법으로 표현
+--- | --- | --- | ---
+125 | 11122 | 22111 | 229","class Solution {
+    public int solution(int n) {
+        int answer = 0;
+        return answer;
+    }
+}"
+등수 매기기,"score | result
+--- | ---
+[[80, 70], [90, 50], [40, 70], [50, 80]] | [1, 2, 4, 3]
+[[80, 70], [70, 80], [30, 50], [90, 100], [100, 90], [100, 100], [10, 30]] | [4, 4, 6, 2, 2, 1, 7]","class Solution {
+    public int[] solution(int[][] score) {
+        int[] answer = {};
+        return answer;
+    }
+}"

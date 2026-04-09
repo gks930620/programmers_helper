@@ -1,0 +1,494 @@
+﻿문제제목,입출력 예,자바파일
+문자열 잘라서 정렬하기,"myString | result
+--- | ---
+""axbxcxdx"" | [""a"",""b"",""c"",""d""]
+""dxccxbbbxaaaa"" | [""aaaa"",""bbb"",""cc"",""d""]","class Solution {
+    public String[] solution(String myString) {
+        String[] answer = {};
+        return answer;
+    }
+}"
+x 사이의 개수,"myString | result
+--- | ---
+""oxooxoxxox"" | [1, 2, 1, 0, 1, 0]
+""xabcxdefxghi"" | [0, 3, 3, 3]","class Solution {
+    public int[] solution(String myString) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+공백으로 구분하기 2,"my_string | result
+--- | ---
+"" i    love  you"" | [""i"", ""love"", ""you""]
+""    programmers  "" | [""programmers""]","class Solution {
+    public String[] solution(String my_string) {
+        String[] answer = {};
+        return answer;
+    }
+}"
+공백으로 구분하기 1,"my_string | result
+--- | ---
+""i love you"" | [""i"", ""love"", ""you""]
+""programmers"" | [""programmers""]","class Solution {
+    public String[] solution(String my_string) {
+        String[] answer = {};
+        return answer;
+    }
+}"
+ad 제거하기,"strArr | result
+--- | ---
+[""and"",""notad"",""abcd""] | [""and"",""abcd""]
+[""there"",""are"",""no"",""a"",""ds""] | [""there"",""are"",""no"",""a"",""ds""]","class Solution {
+    public String[] solution(String[] strArr) {
+        String[] answer = {};
+        return answer;
+    }
+}"
+특정한 문자를 대문자로 바꾸기,"my_string | alp | result
+--- | --- | ---
+""programmers"" | ""p"" | ""Programmers""
+""lowercase"" | ""x"" | ""lowercase""","class Solution {
+    public String solution(String my_string, String alp) {
+        String answer = """";
+        return answer;
+    }
+}"
+A 강조하기,"myString | result
+--- | ---
+""abstract algebra"" | ""AbstrAct AlgebrA""
+""PrOgRaMmErS"" | ""progrAmmers""","class Solution {
+    public String solution(String myString) {
+        String answer = """";
+        return answer;
+    }
+}"
+배열에서 문자열 대소문자 변환하기,"strArr | result
+--- | ---
+[""AAA"",""BBB"",""CCC"",""DDD""] | [""aaa"",""BBB"",""ccc"",""DDD""]
+[""aBc"",""AbC""] | [""abc"",""ABC""]","class Solution {
+    public String[] solution(String[] strArr) {
+        String[] answer = {};
+        return answer;
+    }
+}"
+소문자로 바꾸기,"myString | result
+--- | ---
+""aBcDeFg"" | ""abcdefg""
+""aaa"" | ""aaa""","class Solution {
+    public String solution(String myString) {
+        String answer = """";
+        return answer;
+    }
+}"
+원하는 문자열 찾기,"myString | pat | return
+--- | --- | ---
+""AbCdEfG"" | ""aBc"" | 1
+""aaAA"" | ""aaaaa"" | 0","class Solution {
+    public int solution(String myString, String pat) {
+        int answer = 0;
+        return answer;
+    }
+}"
+길이에 따른 연산,"num_list | result
+--- | ---
+[3, 4, 5, 2, 5, 4, 6, 7, 3, 7, 2, 2, 1] | 51
+[2, 3, 4, 5] | 120","class Solution {
+    public int solution(int[] num_list) {
+        int answer = 0;
+        return answer;
+    }
+}"
+조건에 맞게 수열 변환하기 1,"arr | result
+--- | ---
+[1, 2, 3, 100, 99, 98] | [2, 2, 6, 50, 99, 49]","class Solution {
+    public int[] solution(int[] arr) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+n보다 커질 때까지 더하기,"numbers | n | result
+--- | --- | ---
+[34, 5, 71, 29, 100, 34] | 123 | 139
+[58, 44, 27, 10, 100] | 139 | 239
+
+i | numbers[i] | sum
+--- | --- | ---
+ |  | 0
+0 | 34 | 34
+1 | 5 | 39
+2 | 71 | 110
+3 | 29 | 139","class Solution {
+    public int solution(int[] numbers, int n) {
+        int answer = 0;
+        return answer;
+    }
+}"
+할 일 목록,"todo_list | finished | result
+--- | --- | ---
+[""problemsolving"", ""practiceguitar"", ""swim"", ""studygraph""] | [true, false, true, false] | [""practiceguitar"", ""studygraph""]","class Solution {
+    public String[] solution(String[] todo_list, boolean[] finished) {
+        String[] answer = {};
+        return answer;
+    }
+}"
+5명씩,"names | result
+--- | ---
+[""nami"", ""ahri"", ""jayce"", ""garen"", ""ivern"", ""vex"", ""jinx""] | [""nami"", ""vex""]","class Solution {
+    public String[] solution(String[] names) {
+        String[] answer = {};
+        return answer;
+    }
+}"
+홀수 vs 짝수,"num_list | result
+--- | ---
+[4, 2, 6, 1, 7, 6] | 17
+[-1, 2, 5, 6, 3] | 8","class Solution {
+    public int solution(int[] num_list) {
+        int answer = 0;
+        return answer;
+    }
+}"
+순서 바꾸기,"num_list | n | result
+--- | --- | ---
+[2, 1, 6] | 1 | [1, 6, 2]
+[5, 2, 1, 7, 5] | 3 | [7, 5, 5, 2, 1]","class Solution {
+    public int[] solution(int[] num_list, int n) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+배열 만들기 3,"arr | intervals | result
+--- | --- | ---
+[1, 2, 3, 4, 5] | [[1, 3], [0, 4]] | [2, 3, 4, 1, 2, 3, 4, 5]","class Solution {
+    public int[] solution(int[] arr, int[][] intervals) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+가까운 1 찾기,"arr | idx | result
+--- | --- | ---
+[0, 0, 0, 1] | 1 | 3
+[1, 0, 0, 1, 0, 0] | 4 | -1
+[1, 1, 1, 1, 0] | 3 | 3","class Solution {
+    public int solution(int[] arr, int idx) {
+        int answer = 0;
+        return answer;
+    }
+}"
+카운트 다운,"start_num | end_num | result
+--- | --- | ---
+10 | 3 | [10, 9, 8, 7, 6, 5, 4, 3]","class Solution {
+    public int[] solution(int start_num, int end_num) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+배열 만들기 1,"n | k | result
+--- | --- | ---
+10 | 3 | [3, 6, 9]
+15 | 5 | [5, 10, 15]","class Solution {
+    public int[] solution(int n, int k) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+세로 읽기,"my_string | m | c | result
+--- | --- | --- | ---
+""ihrhbakrfpndopljhygc"" | 4 | 2 | ""happy""
+""programmers"" | 1 | 1 | ""programmers""
+
+1열 | 2열 | 3열 | 4열
+--- | --- | --- | ---
+i | h | r | h
+b | a | k | r
+f | p | n | d
+o | p | l | j
+h | y | g | c","class Solution {
+    public String solution(String my_string, int m, int c) {
+        String answer = """";
+        return answer;
+    }
+}"
+접두사인지 확인하기,"my_string | is_prefix | result
+--- | --- | ---
+""banana"" | ""ban"" | 1
+""banana"" | ""nan"" | 0
+""banana"" | ""abcd"" | 0
+""banana"" | ""bananan"" | 0","class Solution {
+    public int solution(String my_string, String is_prefix) {
+        int answer = 0;
+        return answer;
+    }
+}"
+접미사 배열,"my_string | result
+--- | ---
+""banana"" | [""a"", ""ana"", ""anana"", ""banana"", ""na"", ""nana""]
+""programmers"" | [""ammers"", ""ers"", ""grammers"", ""mers"", ""mmers"", ""ogrammers"", ""programmers"", ""rammers"", ""rogrammers"", ""rs"", ""s""]","class Solution {
+    public String[] solution(String my_string) {
+        String[] answer = {};
+        return answer;
+    }
+}"
+부분 문자열 이어 붙여 문자열 만들기,"my_strings | parts | result
+--- | --- | ---
+[""progressive"", ""hamburger"", ""hammer"", ""ahocorasick""] | [[0, 4], [1, 2], [3, 5], [7, 7]] | ""programmers""
+
+i | my_strings[i] | parts[i] | 부분 문자열
+--- | --- | --- | ---
+0 | ""progressive"" | [0, 4] | ""progr""
+1 | ""hamburger"" | [1, 2] | ""am""
+2 | ""hammer"" | [3, 5] | ""mer""
+3 | ""ahocorasick"" | [7, 7] | ""s""","class Solution {
+    public String solution(String[] my_strings, int[][] parts) {
+        String answer = """";
+        return answer;
+    }
+}"
+9로 나눈 나머지,"number | result
+--- | ---
+""123"" | 6
+""78720646226947352489"" | 2","class Solution {
+    public int solution(String number) {
+        int answer = 0;
+        return answer;
+    }
+}"
+콜라츠 수열 만들기,"n | result
+--- | ---
+10 | [10, 5, 16, 8, 4, 2, 1]
+
+연산 횟수 | x | 홀짝 여부
+--- | --- | ---
+0 | 10 | 짝수
+1 | 5 | 홀수
+2 | 16 | 짝수
+3 | 8 | 짝수
+4 | 4 | 짝수
+5 | 2 | 짝수
+6 | 1 | 홀수","class Solution {
+    public int[] solution(int n) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+수 조작하기 2,"numLog | result
+--- | ---
+[0, 1, 0, 10, 0, 1, 0, 10, 0, -1, -2, -1] | ""wsdawsdassw""","class Solution {
+    public String solution(int[] numLog) {
+        String answer = """";
+        return answer;
+    }
+}"
+주사위 게임 2,"a | b | c | result
+--- | --- | --- | ---
+2 | 6 | 1 | 9
+5 | 3 | 3 | 473
+4 | 4 | 4 | 110592","class Solution {
+    public int solution(int a, int b, int c) {
+        int answer = 0;
+        return answer;
+    }
+}"
+문자열 돌리기,,"import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String a = sc.next();
+    }
+}"
+덧셈식 출력하기,,"import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        System.out.println(a + b);
+    }
+}"
+두 수의 연산값 비교하기,"a | b | result
+--- | --- | ---
+2 | 91 | 364
+91 | 2 | 912","class Solution {
+    public int solution(int a, int b) {
+        int answer = 0;
+        return answer;
+    }
+}"
+짝수는 싫어요,"n | result
+--- | ---
+10 | [1, 3, 5, 7, 9]
+15 | [1, 3, 5, 7, 9, 11, 13, 15]","class Solution {
+    public int[] solution(int n) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+두 정수 사이의 합,"a | b | return
+--- | --- | ---
+3 | 5 | 12
+3 | 3 | 3
+5 | 3 | 12","class Solution {
+    public long solution(int a, int b) {
+        long answer = 0;
+        return answer;
+    }
+}"
+문자열을 정수로 바꾸기,,"class Solution {
+    public int solution(String s) {
+        int answer = 0;
+        return answer;
+    }
+}"
+약수의 합,"n | return
+--- | ---
+12 | 28
+5 | 6","class Solution {
+    public int solution(int n) {
+        int answer = 0;
+        return answer;
+    }
+}"
+자릿수 더하기,"N | answer
+--- | ---
+123 | 6
+987 | 24","import java.util.*;
+
+public class Solution {
+    public int solution(int n) {
+        int answer = 0;
+
+        // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
+        System.out.println(""Hello Java"");
+
+        return answer;
+    }
+}"
+자연수 뒤집어 배열로 만들기,"n | return
+--- | ---
+12345 | [5,4,3,2,1]","class Solution {
+    public int[] solution(long n) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+정수 내림차순으로 배치하기,"n | return
+--- | ---
+118372 | 873211","class Solution {
+    public long solution(long n) {
+        long answer = 0;
+        return answer;
+    }
+}"
+정수 제곱근 판별,"n | return
+--- | ---
+121 | 144
+3 | -1","class Solution {
+    public long solution(long n) {
+        long answer = 0;
+        return answer;
+    }
+}"
+짝수와 홀수,"num | return
+--- | ---
+3 | ""Odd""
+4 | ""Even""","class Solution {
+    public String solution(int num) {
+        String answer = """";
+        return answer;
+    }
+}"
+평균 구하기,"arr | return
+--- | ---
+[1,2,3,4] | 2.5
+[5,5] | 5","class Solution {
+    public double solution(int[] arr) {
+        double answer = 0;
+        return answer;
+    }
+}"
+하샤드 수,"x | return
+--- | ---
+10 | true
+12 | true
+11 | false
+13 | false","class Solution {
+    public boolean solution(int x) {
+        boolean answer = true;
+        return answer;
+    }
+}"
+x만큼 간격이 있는 n개의 숫자,"x | n | answer
+--- | --- | ---
+2 | 5 | [2,4,6,8,10]
+4 | 3 | [4,8,12]
+-4 | 2 | [-4, -8]","class Solution {
+    public long[] solution(int x, int n) {
+        long[] answer = {};
+        return answer;
+    }
+}"
+나머지가 1이 되는 수 찾기,"n | result
+--- | ---
+10 | 3
+12 | 11","class Solution {
+    public int solution(int n) {
+        int answer = 0;
+        return answer;
+    }
+}"
+피자 나눠 먹기 (2),"n | result
+--- | ---
+6 | 1
+10 | 5
+4 | 2","class Solution {
+    public int solution(int n) {
+        int answer = 0;
+        return answer;
+    }
+}"
+외계행성의 나이,"age | result
+--- | ---
+23 | ""cd""
+51 | ""fb""
+100 | ""baa""","class Solution {
+    public String solution(int age) {
+        String answer = """";
+        return answer;
+    }
+}"
+배열 회전시키기,"numbers | direction | result
+--- | --- | ---
+[1, 2, 3] | ""right"" | [3, 1, 2]
+[4, 455, 6, 4, -1, 45, 6] | ""left"" | [455, 6, 4, -1, 45, 6, 4]","class Solution {
+    public int[] solution(int[] numbers, String direction) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+이차원 배열 대각선 순회하기,"board | k | result
+--- | --- | ---
+[[0, 1, 2],[1, 2, 3],[2, 3, 4],[3, 4, 5]] | 2 | 8
+
+i \ j | 0 | 1 | 2
+--- | --- | --- | ---
+0 | 0 | 1 | 2
+1 | 1 | 2 | 3
+2 | 2 | 3 | 4
+3 | 3 | 4 | 5","class Solution {
+    public int solution(int[][] board, int k) {
+        int answer = 0;
+        return answer;
+    }
+}"
+날짜 비교하기,"date1 | date2 | result
+--- | --- | ---
+[2021, 12, 28] | [2021, 12, 29] | 1
+[1024, 10, 24] | [1024, 10, 24] | 0","class Solution {
+    public int solution(int[] date1, int[] date2) {
+        int answer = 0;
+        return answer;
+    }
+}"

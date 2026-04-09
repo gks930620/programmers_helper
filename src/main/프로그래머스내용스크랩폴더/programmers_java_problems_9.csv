@@ -1,0 +1,773 @@
+﻿문제제목,입출력 예,자바파일
+[3차] 방금그곡,"m | musicinfos | answer
+--- | --- | ---
+""ABCDEFG"" | [""12:00,12:14,HELLO,CDEFGAB"", ""13:00,13:05,WORLD,ABCDEF""] | ""HELLO""
+""CC#BCC#BCC#BCC#B"" | [""03:00,03:30,FOO,CC#B"", ""04:00,04:08,BAR,CC#BCC#BCC#B""] | ""FOO""
+""ABC"" | [""12:00,12:14,HELLO,C#DEFGAB"", ""13:00,13:05,WORLD,ABCDEF""] | ""WORLD""","class Solution {
+    public String solution(String m, String[] musicinfos) {
+        String answer = """";
+        return answer;
+    }
+}"
+섬 연결하기,"n | costs | return
+--- | --- | ---
+4 | [[0,1,1],[0,2,2],[1,2,5],[1,3,1],[2,3,8]] | 4","class Solution {
+    public int solution(int n, int[][] costs) {
+        int answer = 0;
+        return answer;
+    }
+}"
+여행경로,"tickets | return
+--- | ---
+[[""ICN"", ""JFK""], [""HND"", ""IAD""], [""JFK"", ""HND""]] | [""ICN"", ""JFK"", ""HND"", ""IAD""]
+[[""ICN"", ""SFO""], [""ICN"", ""ATL""], [""SFO"", ""ATL""], [""ATL"", ""ICN""], [""ATL"",""SFO""]] | [""ICN"", ""ATL"", ""ICN"", ""SFO"", ""ATL"", ""SFO""]","class Solution {
+    public String[] solution(String[][] tickets) {
+        String[] answer = {};
+        return answer;
+    }
+}"
+가장 먼 노드,"n | vertex | return
+--- | --- | ---
+6 | [[3, 6], [4, 3], [3, 2], [1, 3], [1, 2], [2, 4], [5, 2]] | 3","class Solution {
+    public int solution(int n, int[][] edge) {
+        int answer = 0;
+        return answer;
+    }
+}"
+징검다리 건너기,"stones | k | result
+--- | --- | ---
+[2, 4, 5, 3, 2, 1, 4, 2, 5, 1] | 3 | 3","class Solution {
+    public int solution(int[] stones, int k) {
+        int answer = 0;
+        return answer;
+    }
+}"
+부대복귀,"n | roads | sources | destination | result
+--- | --- | --- | --- | ---
+3 | [[1, 2], [2, 3]] | [2, 3] | 1 | [1, 2]
+5 | [[1, 2], [1, 4], [2, 4], [2, 5], [4, 5]] | [1, 3, 5] | 5 | [2, -1, 0]","class Solution {
+    public int[] solution(int n, int[][] roads, int[] sources, int destination) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+테이블 해시 함수,"data | col | row_begin | row_end | result
+--- | --- | --- | --- | ---
+[[2,2,6],[1,5,10],[4,2,9],[3,8,3]] | 2 | 2 | 3 | 4","class Solution {
+    public int solution(int[][] data, int col, int row_begin, int row_end) {
+        int answer = 0;
+        return answer;
+    }
+}"
+개인정보 수집 유효기간,"약관 종류 | 유효기간
+--- | ---
+A | 6 달
+B | 12 달
+C | 3 달
+
+번호 | 개인정보 수집 일자 | 약관 종류
+--- | --- | ---
+1 | 2021.05.02 | A
+2 | 2021.07.01 | B
+3 | 2022.02.19 | C
+4 | 2022.02.20 | C
+
+today | terms | privacies | result
+--- | --- | --- | ---
+""2022.05.19"" | [""A 6"", ""B 12"", ""C 3""] | [""2021.05.02 A"", ""2021.07.01 B"", ""2022.02.19 C"", ""2022.02.20 C""] | [1, 3]
+""2020.01.01"" | [""Z 3"", ""D 5""] | [""2019.01.01 D"", ""2019.11.15 Z"", ""2019.08.02 D"", ""2019.07.01 D"", ""2018.12.28 Z""] | [1, 4, 5]
+
+약관 종류 | 유효기간
+--- | ---
+Z | 3 달
+D | 5 달
+
+번호 | 개인정보 수집 일자 | 약관 종류
+--- | --- | ---
+1 | 2019.01.01 | D
+2 | 2019.11.15 | Z
+3 | 2019.08.02 | D
+4 | 2019.07.01 | D
+5 | 2018.12.28 | Z","class Solution {
+    public int[] solution(String today, String[] terms, String[] privacies) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+연속 펄스 부분 수열의 합,"sequence | result
+--- | ---
+[2, 3, -6, 1, 3, -1, 2, 4] | 10","class Solution {
+    public long solution(int[] sequence) {
+        long answer = 0;
+        return answer;
+    }
+}"
+달리기 경주,"players | callings | result
+--- | --- | ---
+[""mumu"", ""soe"", ""poe"", ""kai"", ""mine""] | [""kai"", ""kai"", ""mine"", ""mine""] | [""mumu"", ""kai"", ""mine"", ""soe"", ""poe""]","class Solution {
+    public String[] solution(String[] players, String[] callings) {
+        String[] answer = {};
+        return answer;
+    }
+}"
+유연근무제,"그룹 | 총점 | 추가 제한 사항
+--- | --- | ---
+#1 | 10% | n= 1. 이벤트 시작일이 월요일이고, 출근 희망 시각이 정각으로 된 입력만 주어집니다.
+#2 | 10% | 이벤트 시작일이 월요일이고, 출근 희망 시각이 정각으로 된 입력만 주어집니다.
+#3 | 15% | 출근 희망 시각이 정각으로 된 입력만 주어집니다.
+#4 | 15% | 이벤트 시작일이 월요일인 입력만 주어집니다.
+#5 | 50% | 제한사항 외 추가조건이 없습니다.
+
+schedules | timelogs | startday | result
+--- | --- | --- | ---
+[700, 800, 1100] | [[710, 2359, 1050, 700, 650, 631, 659], [800, 801, 805, 800, 759, 810, 809], [1105, 1001, 1002, 600, 1059, 1001, 1100]] | 5 | 3
+[730, 855, 700, 720] | [[710, 700, 650, 735, 700, 931, 912], [908, 901, 805, 815, 800, 831, 835], [705, 701, 702, 705, 710, 710, 711], [707, 731, 859, 913, 934, 931, 905]] | 1 | 2
+
+출근 희망 시각 | 출근 인정 시각
+--- | ---
+7:00 | 7:10
+8:00 | 8:10
+11:00 | 11:10
+
+금 | 토 | 일 | 월 | 화 | 수 | 목
+--- | --- | --- | --- | --- | --- | ---
+7:10 | 23:59 | 10:50 | 7:00 | 6:50 | 6:31 | 6:59
+8:00 | 8:01 | 8:05 | 8:00 | 7:59 | 8:10 | 8:09
+11:05 | 10:01 | 10:02 | 6:00 | 10:59 | 10:01 | 11:00
+
+출근 희망 시각 | 출근 인정 시각
+--- | ---
+7:30 | 7:40
+8:55 | 9:05
+7:00 | 7:10
+7:20 | 7:30
+
+월 | 화 | 수 | 목 | 금 | 토 | 일
+--- | --- | --- | --- | --- | --- | ---
+7:10 | 7:00 | 6:50 | 7:35 | 7:00 | 9:31 | 9:12
+9:08 | 9:01 | 8:05 | 8:15 | 8:00 | 8:31 | 8:35
+7:05 | 7:01 | 7:02 | 7:05 | 7:10 | 7:10 | 7:11
+7:07 | 7:31 | 8:59 | 9:13 | 9:34 | 9:31 | 9:05","class Solution {
+    public int solution(int[] schedules, int[][] timelogs, int startday) {
+        int answer = 0;
+        return answer;
+    }
+}"
+줄 서는 방법,"n | k | result
+--- | --- | ---
+3 | 5 | [3,1,2]","class Solution {
+    public int[] solution(int n, long k) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+괄호 변환,"p | result
+--- | ---
+""(()())()"" | ""(()())()""
+"")("" | ""()""
+""()))((()"" | ""()(())()""","class Solution {
+    public String solution(String p) {
+        String answer = """";
+        return answer;
+    }
+}"
+수식 최대화,"expression | result
+--- | ---
+""100-200*300-500+20"" | 60420
+""50*6-3*2"" | 300","class Solution {
+    public long solution(String expression) {
+        long answer = 0;
+        return answer;
+    }
+}"
+행렬 테두리 회전하기,"rows | columns | queries | result
+--- | --- | --- | ---
+6 | 6 | [[2,2,5,4],[3,3,6,6],[5,1,6,3]] | [8, 10, 25]
+3 | 3 | [[1,1,2,2],[1,2,2,3],[2,1,3,2],[2,2,3,3]] | [1, 1, 5, 3]
+100 | 97 | [[1,1,100,97]] | [1]","class Solution {
+    public int[] solution(int rows, int columns, int[][] queries) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+무인도 여행,"maps | result
+--- | ---
+[""X591X"",""X1X5X"",""X231X"", ""1XXX1""] | [1, 1, 27]
+[""XXX"",""XXX"",""XXX""] | [-1]","class Solution {
+    public int[] solution(String[] maps) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+정수를 나선형으로 배치하기,"n | result
+--- | ---
+4 | [[1, 2, 3, 4], [12, 13, 14, 5], [11, 16, 15, 6], [10, 9, 8, 7]]
+5 | [[1, 2, 3, 4, 5], [16, 17, 18, 19, 6], [15, 24, 25, 20, 7], [14, 23, 22, 21, 8], [13, 12, 11, 10, 9]]
+
+행 \ 열 | 0 | 1 | 2 | 3
+--- | --- | --- | --- | ---
+0 | 1 | 2 | 3 | 4
+1 | 12 | 13 | 14 | 5
+2 | 11 | 16 | 15 | 6
+3 | 10 | 9 | 8 | 7
+
+행 \ 열 | 0 | 1 | 2 | 3 | 4
+--- | --- | --- | --- | --- | ---
+0 | 1 | 2 | 3 | 4 | 5
+1 | 16 | 17 | 18 | 19 | 6
+2 | 15 | 24 | 25 | 20 | 7
+3 | 14 | 23 | 22 | 21 | 8
+4 | 13 | 12 | 11 | 10 | 9","class Solution {
+    public int[][] solution(int n) {
+        int[][] answer = {};
+        return answer;
+    }
+}"
+가장 큰 정사각형 찾기,"1 | 2 | 3 | 4
+--- | --- | --- | ---
+0 | 1 | 1 | 1
+1 | 1 | 1 | 1
+1 | 1 | 1 | 1
+0 | 0 | 1 | 0
+
+1 | 2 | 3 | 4
+--- | --- | --- | ---
+0 | 1 | 1 | 1
+1 | 1 | 1 | 1
+1 | 1 | 1 | 1
+0 | 0 | 1 | 0
+
+board | answer
+--- | ---
+[[0,1,1,1],[1,1,1,1],[1,1,1,1],[0,0,1,0]] | 9
+[[0,0,1,1],[1,1,1,1]] | 4","class Solution
+{
+    public int solution(int [][]board)
+    {
+        int answer = 1234;
+
+        // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
+        System.out.println(""Hello Java"");
+
+        return answer;
+    }
+}"
+입국심사,"n | times | return
+--- | --- | ---
+6 | [7, 10] | 28","class Solution {
+    public long solution(int n, int[] times) {
+        long answer = 0;
+        return answer;
+    }
+}"
+경주로 건설,"board | result
+--- | ---
+[[0,0,0],[0,0,0],[0,0,0]] | 900
+[[0,0,0,0,0,0,0,1],[0,0,0,0,0,0,0,0],[0,0,0,0,0,1,0,0],[0,0,0,0,1,0,0,0],[0,0,0,1,0,0,0,1],[0,0,1,0,0,0,1,0],[0,1,0,0,0,1,0,0],[1,0,0,0,0,0,0,0]] | 3800
+[[0,0,1,0],[0,0,0,0],[0,1,0,1],[1,0,0,0]] | 2100
+[[0,0,0,0,0,0],[0,1,1,1,1,0],[0,0,1,0,0,0],[1,0,0,1,0,1],[0,1,0,0,0,1],[0,0,0,0,0,0]] | 3200","class Solution {
+    public int solution(int[][] board) {
+        int answer = 0;
+        return answer;
+    }
+}"
+거리두기 확인하기," |  | 
+--- | --- | ---
+위 그림처럼 자리 사이에 파티션이 존재한다면 맨해튼 거리가 2여도 거리두기를지킨 것입니다. | 위 그림처럼 파티션을 사이에 두고 앉은 경우도 거리두기를지킨 것입니다. | 위 그림처럼 자리 사이가 맨해튼 거리 2이고 사이에 빈 테이블이 있는 경우는 거리두기를지키지 않은 것입니다.
+ |  | 
+응시자가 앉아있는 자리(P)를 의미합니다. | 빈 테이블(O)을 의미합니다. | 파티션(X)을 의미합니다.
+
+places | result
+--- | ---
+[[""POOOP"", ""OXXOX"", ""OPXPX"", ""OOXOX"", ""POXXP""], [""POOPX"", ""OXPXP"", ""PXXXO"", ""OXXXO"", ""OOOPP""], [""PXOPX"", ""OXOXP"", ""OXPOX"", ""OXXOP"", ""PXPOX""], [""OOOXX"", ""XOOOX"", ""OOOXX"", ""OXOOX"", ""OOOOO""], [""PXPXP"", ""XPXPX"", ""PXPXP"", ""XPXPX"", ""PXPXP""]] | [1, 0, 1, 1, 1]
+
+ |  |  |  |  | 
+--- | --- | --- | --- | --- | ---
+No. | 0 | 1 | 2 | 3 | 4
+0 | P | O | O | O | P
+1 | O | X | X | O | X
+2 | O | P | X | P | X
+3 | O | O | X | O | X
+4 | P | O | X | X | P
+
+ |  |  |  |  | 
+--- | --- | --- | --- | --- | ---
+No. | 0 | 1 | 2 | 3 | 4
+0 | P | O | O | P | X
+1 | O | X | P | X | P
+2 | P | X | X | X | O
+3 | O | X | X | X | O
+4 | O | O | O | P | P
+
+ |  |  |  |  | 
+--- | --- | --- | --- | --- | ---
+No. | 0 | 1 | 2 | 3 | 4
+0 | P | X | O | P | X
+1 | O | X | O | X | P
+2 | O | X | P | O | X
+3 | O | X | X | O | P
+4 | P | X | P | O | X
+
+ |  |  |  |  | 
+--- | --- | --- | --- | --- | ---
+No. | 0 | 1 | 2 | 3 | 4
+0 | O | O | O | X | X
+1 | X | O | O | O | X
+2 | O | O | O | X | X
+3 | O | X | O | O | X
+4 | O | O | O | O | O
+
+ |  |  |  |  | 
+--- | --- | --- | --- | --- | ---
+No. | 0 | 1 | 2 | 3 | 4
+0 | P | X | P | X | P
+1 | X | P | X | P | X
+2 | P | X | P | X | P
+3 | X | P | X | P | X
+4 | P | X | P | X | P","class Solution {
+    public int[] solution(String[][] places) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+공원 산책,"park | routes | result
+--- | --- | ---
+[""SOO"",""OOO"",""OOO""] | [""E 2"",""S 2"",""W 1""] | [2,1]
+[""SOO"",""OXX"",""OOO""] | [""E 2"",""S 2"",""W 1""] | [0,1]
+[""OSO"",""OOO"",""OXO"",""OOO""] | [""E 2"",""S 3"",""W 1""] | [0,0]","class Solution {
+    public int[] solution(String[] park, String[] routes) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+하노이의 탑,"n | result
+--- | ---
+2 | [ [1,2], [1,3], [2,3] ]","class Solution {
+    public int[][] solution(int n) {
+        int[][] answer = {};
+        return answer;
+    }
+}"
+디스크 컨트롤러,"시점 | 하드디스크 | 대기 큐 | 디스크 컨트롤러
+--- | --- | --- | ---
+0ms |  | [] | 
+0ms |  | [[0번, 0ms, 3ms]] | 0번 작업 요청을 대기 큐에 저장
+0ms | 0번 작업 시작 | [] | 대기 큐에서 우선순위가 높은 0번 작업을 꺼내서 작업을 시킴
+1ms | 0번 작업 중 | [[1번, 1ms, 9ms]] | 1번 작업 요청을 대기 큐에 저장
+3ms | 0번 작업 완료 | [[1번, 1ms, 9ms]] | 
+3ms |  | [[1번, 1ms, 9ms], [2번, 3ms, 5ms]] | 2번 작업 요청을 대기 큐에 저장
+3ms | 2번 작업 시작 | [[1번, 1ms, 9ms]] | 대기 큐에서 우선순위가 높은 2번 작업을 꺼내서 작업을 시킴
+8ms | 2번 작업 완료 | [[1번, 1ms, 9ms]] | 
+8ms | 1번 작업 시작 | [] | 대기 큐에서 우선순위가 높은 1번 작업을 꺼내서 작업을 시킴
+17ms | 1번 작업 완료 | [] | 
+
+작업 번호 | 요청 시각 | 작업 종료 시각 | 반환 시간
+--- | --- | --- | ---
+0번 | 0ms | 3ms | 3ms(= 3ms - 0ms)
+1번 | 1ms | 17ms | 16ms(= 17ms - 1ms)
+2번 | 3ms | 8ms | 5ms(= 8ms - 3ms)
+
+jobs | return
+--- | ---
+[[0, 3], [1, 9], [3, 5]] | 8","class Solution {
+    public int solution(int[][] jobs) {
+        int answer = 0;
+        return answer;
+    }
+}"
+다단계 칫솔 판매,"판매원 | 판매 수량 | 이익금
+--- | --- | ---
+young | 12 | 1,200 원
+john | 4 | 400 원
+tod | 2 | 200 원
+emily | 5 | 500 원
+mary | 10 | 1,000 원
+
+enroll | referral | seller | amount | result
+--- | --- | --- | --- | ---
+[""john"", ""mary"", ""edward"", ""sam"", ""emily"", ""jaimie"", ""tod"", ""young""] | [""-"", ""-"", ""mary"", ""edward"", ""mary"", ""mary"", ""jaimie"", ""edward""] | [""young"", ""john"", ""tod"", ""emily"", ""mary""] | [12, 4, 2, 5, 10] | [360, 958, 108, 0, 450, 18, 180, 1080]
+[""john"", ""mary"", ""edward"", ""sam"", ""emily"", ""jaimie"", ""tod"", ""young""] | [""-"", ""-"", ""mary"", ""edward"", ""mary"", ""mary"", ""jaimie"", ""edward""] | [""sam"", ""emily"", ""jaimie"", ""edward""] | [2, 3, 5, 4] | [0, 110, 378, 180, 270, 450, 0, 0]","class Solution {
+    public int[] solution(String[] enroll, String[] referral, String[] seller, int[] amount) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+우박수열 정적분,"k | ranges | result
+--- | --- | ---
+5 | [[0,0],[0,-1],[2,-3],[3,-3]] | [33.0,31.5,0.0,-1.0]
+3 | [[0,0], [1,-2], [3,-3]] | [47.0,36.0,12.0]","class Solution {
+    public double[] solution(int k, int[][] ranges) {
+        double[] answer = {};
+        return answer;
+    }
+}"
+광물 캐기,"picks | minerals | result
+--- | --- | ---
+[1, 3, 2] | [""diamond"", ""diamond"", ""diamond"", ""iron"", ""iron"", ""diamond"", ""iron"", ""stone""] | 12
+[0, 1, 1] | [""diamond"", ""diamond"", ""diamond"", ""diamond"", ""diamond"", ""iron"", ""iron"", ""iron"", ""iron"", ""iron"", ""diamond""] | 50","class Solution {
+    public int solution(int[] picks, String[] minerals) {
+        int answer = 0;
+        return answer;
+    }
+}"
+가장 긴 팰린드롬,"s | answer
+--- | ---
+""abcdcba"" | 7
+""abacde"" | 3","class Solution
+{
+    public int solution(String s)
+    {
+        int answer = 0;
+
+        // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
+        System.out.println(""Hello Java"");
+
+        return answer;
+    }
+}"
+[PCCE 기출문제] 10번 / 공원,"mats | park | result
+--- | --- | ---
+[5,3,2] | [[""A"", ""A"", ""-1"", ""B"", ""B"", ""B"", ""B"", ""-1""], [""A"", ""A"", ""-1"", ""B"", ""B"", ""B"", ""B"", ""-1""], [""-1"", ""-1"", ""-1"", ""-1"", ""-1"", ""-1"", ""-1"", ""-1""], [""D"", ""D"", ""-1"", ""-1"", ""-1"", ""-1"", ""E"", ""-1""], [""D"", ""D"", ""-1"", ""-1"", ""-1"", ""-1"", ""-1"", ""F""], [""D"", ""D"", ""-1"", ""-1"", ""-1"", ""-1"", ""E"", ""-1""]] | 3","class Solution {
+    public int solution(int[] mats, String[][] park) {
+        int answer = 0;
+        return answer;
+    }
+}"
+[PCCP 기출문제] 2번 / 퍼즐 게임 챌린지,"diffs | times | limit | result
+--- | --- | --- | ---
+[1, 5, 3] | [2, 4, 7] | 30 | 3
+[1, 4, 4, 2] | [6, 3, 8, 2] | 59 | 2
+[1, 328, 467, 209, 54] | [2, 7, 1, 4, 3] | 1723 | 294
+[1, 99999, 100000, 99995] | [9999, 9001, 9999, 9001] | 3456789012 | 39354","class Solution {
+    public int solution(int[] diffs, int[] times, long limit) {
+        int answer = 0;
+        return answer;
+    }
+}"
+거스름돈,"n | money | result
+--- | --- | ---
+5 | [1,2,5] | 4","class Solution {
+    public int solution(int n, int[] money) {
+        int answer = 0;
+        return answer;
+    }
+}"
+[1차] 셔틀버스,"n | t | m | timetable | answer
+--- | --- | --- | --- | ---
+1 | 1 | 5 | [""08:00"", ""08:01"", ""08:02"", ""08:03""] | ""09:00""
+2 | 10 | 2 | [""09:10"", ""09:09"", ""08:00""] | ""09:09""
+2 | 1 | 2 | [""09:00"", ""09:00"", ""09:00"", ""09:00""] | ""08:59""
+1 | 1 | 5 | [""00:01"", ""00:01"", ""00:01"", ""00:01"", ""00:01""] | ""00:00""
+1 | 1 | 1 | [""23:59""] | ""09:00""
+10 | 60 | 45 | [""23:59"",""23:59"", ""23:59"", ""23:59"", ""23:59"", ""23:59"", ""23:59"", ""23:59"", ""23:59"", ""23:59"", ""23:59"", ""23:59"", ""23:59"", ""23:59"", ""23:59"", ""23:59""] | ""18:00""","class Solution {
+    public String solution(int n, int t, int m, String[] timetable) {
+        String answer = """";
+        return answer;
+    }
+}"
+풍선 터트리기,"a | result
+--- | ---
+[9,-1,-5] | 3
+[-16,27,65,-2,58,-92,-71,-68,-61,-33] | 6","class Solution {
+    public int solution(int[] a) {
+        int answer = 0;
+        return answer;
+    }
+}"
+[PCCP 기출문제] 1번 / 붕대 감기,"bandage | health | attacks | result
+--- | --- | --- | ---
+[5, 1, 5] | 30 | [[2, 10], [9, 15], [10, 5], [11, 5]] | 5
+[3, 2, 7] | 20 | [[1, 15], [5, 16], [8, 6]] | -1
+[4, 2, 7] | 20 | [[1, 15], [5, 16], [8, 6]] | -1
+[1, 1, 1] | 5 | [[1, 2], [3, 2]] | 3
+
+시간 | 현재 체력(변화량) | 연속 성공 | 공격 | 설명
+--- | --- | --- | --- | ---
+0 | 30 | 0 | X | 초기 상태
+1 | 30(+0) | 1 | X | 최대 체력 이상의 체력을 가질 수 없습니다.
+2 | 20(-10) | 0 | O | 몬스터의 공격으로 연속 성공이 초기화됩니다.
+3 | 21(+1) | 1 | X | 
+4 | 22(+1) | 2 | X | 
+5 | 23(+1) | 3 | X | 
+6 | 24(+1) | 4 | X | 
+7 | 30(+6) | 5 → 0 | X | 5초 연속 성공해 체력을 5만큼 추가 회복하고 연속 성공이 초기화됩니다.
+8 | 30(+0) | 1 | X | 최대 체력 이상의 체력을 가질 수 없습니다.
+9 | 15(-15) | 0 | O | 몬스터의 공격으로 연속 성공이 초기화됩니다.
+10 | 10(-5) | 0 | O | 몬스터의 공격으로 연속 성공이 초기화됩니다.
+11 | 5(-5) | 0 | O | 몬스터의 마지막 공격입니다.
+
+시간 | 현재 체력(변화량) | 연속 성공 | 공격 | 설명
+--- | --- | --- | --- | ---
+0 | 20 | 0 | X | 초기 상태
+1 | 5(-15) | 0 | O | 몬스터의 공격으로 연속 성공이 초기화됩니다.
+2 | 7(+2) | 1 | X | 
+3 | 9(+2) | 2 | X | 
+4 | 18(+9) | 3 → 0 | X | 3초 연속 성공해 체력을 7만큼 추가 회복하고 연속 성공이 초기화됩니다.
+5 | 2(-16) | 0 | O | 몬스터의 공격으로 연속 성공이 초기화됩니다.
+6 | 4(+2) | 1 | X | 
+7 | 6(+2) | 2 | X | 
+8 | 0(-6) | 0 | O | 몬스터의 마지막 공격을 받아 캐릭터의 체력이 0 이하가 됩니다.
+
+시간 | 현재 체력(변화량) | 연속 성공 | 공격 | 설명
+--- | --- | --- | --- | ---
+0 | 20 | 0 | X | 초기 상태
+1 | 5(-15) | 0 | O | 몬스터의 공격으로 연속 성공이 초기화됩니다.
+2 | 7(+2) | 1 | X | 
+3 | 9(+2) | 2 | X | 
+4 | 11(+2) | 3 | X | 
+5 | -5(-16) | 0 | O | 몬스터의 공격을 받아 캐릭터의 체력이 0 이하가 됩니다.
+
+시간 | 현재 체력(변화량) | 연속 성공 | 공격 | 설명
+--- | --- | --- | --- | ---
+0 | 5 | 0 | X | 초기 상태
+1 | 3(-2) | 0 | O | 몬스터의 공격으로 연속 성공이 초기화됩니다.
+2 | 5(+2) | 1 → 0 | X | 1초 연속 성공해 체력을 1만큼 추가 회복하고 연속 성공이 초기화됩니다.
+3 | 3(-2) | 0 | O | 몬스터의 마지막 공격입니다.","class Solution {
+    public int solution(int[] bandage, int health, int[][] attacks) {
+        int answer = 0;
+        return answer;
+    }
+}"
+인사고과,"scores | result
+--- | ---
+[[2,2],[1,4],[3,2],[3,2],[2,1]] | 4","class Solution {
+    public int solution(int[][] scores) {
+        int answer = 0;
+        return answer;
+    }
+}"
+순위,"n | results | return
+--- | --- | ---
+5 | [[4, 3], [4, 2], [3, 2], [1, 2], [2, 5]] | 2","class Solution {
+    public int solution(int n, int[][] results) {
+        int answer = 0;
+        return answer;
+    }
+}"
+문자열 압축,"s | result
+--- | ---
+""aabbaccc"" | 7
+""ababcdcdababcdcd"" | 9
+""abcabcdede"" | 8
+""abcabcabcabcdededededede"" | 14
+""xababcdcdababcdcd"" | 17","class Solution {
+    public int solution(String s) {
+        int answer = 0;
+        return answer;
+    }
+}"
+멀쩡한 사각형,"W | H | result
+--- | --- | ---
+8 | 12 | 80","class Solution {
+    public long solution(int w, int h) {
+        long answer = 1;
+        return answer;
+    }
+}"
+파괴되지 않은 건물,"board | skill | result
+--- | --- | ---
+[[5,5,5,5,5],[5,5,5,5,5],[5,5,5,5,5],[5,5,5,5,5]] | [[1,0,0,3,4,4],[1,2,0,2,3,2],[2,1,0,3,1,2],[1,0,1,3,3,1]] | 10
+[[1,2,3],[4,5,6],[7,8,9]] | [[1,1,1,2,2,4],[1,0,0,1,1,2],[2,2,0,2,0,100]] | 6","class Solution {
+    public int solution(int[][] board, int[][] skill) {
+        int answer = 0;
+        return answer;
+    }
+}"
+이모티콘 할인행사,"사용자 | 비율 | 가격
+--- | --- | ---
+1 | 40 | 10,000
+2 | 25 | 10,000
+
+이모티콘 | 가격
+--- | ---
+1 | 7,000
+2 | 9,000
+
+사용자 | 구매한 이모티콘 | 이모티콘 구매 비용 | 이모티콘 플러스 서비스 가입 여부
+--- | --- | --- | ---
+1 | 1, 2 | 9,600 | X
+2 | 1, 2 | 9,600 | X
+
+사용자 | 구매한 이모티콘 | 이모티콘 구매 비용 | 이모티콘 플러스 서비스 가입 여부
+--- | --- | --- | ---
+1 | 2 | 5,400 | X
+2 | 1, 2 | 10,300 | O
+
+users | emoticons | result
+--- | --- | ---
+[[40, 10000], [25, 10000]] | [7000, 9000] | [1, 5400]
+[[40, 2900], [23, 10000], [11, 5200], [5, 5900], [40, 3100], [27, 9200], [32, 6900]] | [1300, 1500, 1600, 4900] | [4, 13860]
+
+이모티콘 | 할인율
+--- | ---
+1 | 40
+2 | 40
+3 | 20
+4 | 40","class Solution {
+    public int[] solution(int[][] users, int[] emoticons) {
+        int[] answer = {};
+        return answer;
+    }
+}"
+비밀 코드 해독,"입력한 정수 | 시스템 응답(일치하는 개수)
+--- | ---
+[1, 2, 3, 4, 5] | 2개
+[6, 7, 8, 9, 10] | 3개
+[3, 7, 8, 9, 10] | 4개
+[2, 5, 7, 9, 10] | 3개
+[3, 4, 5, 6, 7] | 3개
+
+그룹 | 총점 | 추가 제한 사항
+--- | --- | ---
+#1 | 20% | m= 1
+#2 | 80% | 추가 제한 사항 없음
+
+n | q | ans | result
+--- | --- | --- | ---
+10 | [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [3, 7, 8, 9, 10], [2, 5, 7, 9, 10], [3, 4, 5, 6, 7]] | [2, 3, 4, 3, 3] | 3
+15 | [[2, 3, 9, 12, 13], [1, 4, 6, 7, 9], [1, 2, 8, 10, 12], [6, 7, 11, 13, 15], [1, 4, 10, 11, 14]] | [2, 1, 3, 0, 1] | 5","class Solution {
+    public int solution(int n, int[][] q, int[] ans) {
+        int answer = 0;
+        return answer;
+    }
+}"
+지게차와 크레인,"그룹 | 총점 | 추가 제한 사항
+--- | --- | ---
+#1 | 10% | requests에 크레인을 사용한 출고 요청만 존재합니다.
+#2 | 15% | requests에 지게차를 사용한 출고 요청만 존재합니다.
+#3 | 25% | requests에 컨테이너의 종류가 최대 한 번씩 등장합니다. 즉, 이전에 꺼낸 컨테이너 종류를 다시 꺼내지 않습니다.
+#4 | 50% | 제한사항 외 추가조건이 없습니다.
+
+storage | requests | result
+--- | --- | ---
+[""AZWQY"", ""CAABX"", ""BBDDA"", ""ACACA""] | [""A"", ""BB"", ""A""] | 11
+[""HAH"", ""HBH"", ""HHH"", ""HAH"", ""HBH""] | [""C"", ""B"", ""B"", ""B"", ""B"", ""H""] | 4","class Solution {
+    public int solution(String[] storage, String[] requests) {
+        int answer = 0;
+        return answer;
+    }
+}"
+후보키,"relation | result
+--- | ---
+[[""100"",""ryan"",""music"",""2""],[""200"",""apeach"",""math"",""2""],[""300"",""tube"",""computer"",""3""],[""400"",""con"",""computer"",""4""],[""500"",""muzi"",""music"",""3""],[""600"",""apeach"",""music"",""2""]] | 2","class Solution {
+    public int solution(String[][] relation) {
+        int answer = 0;
+        return answer;
+    }
+}"
+점 찍기,"k | d | result
+--- | --- | ---
+2 | 4 | 6
+1 | 5 | 26","class Solution {
+    public long solution(int k, int d) {
+        long answer = 0;
+        return answer;
+    }
+}"
+과제 진행하기,"plans | result
+--- | ---
+[[""korean"", ""11:40"", ""30""], [""english"", ""12:10"", ""20""], [""math"", ""12:30"", ""40""]] | [""korean"", ""english"", ""math""]
+[[""science"", ""12:40"", ""50""], [""music"", ""12:20"", ""40""], [""history"", ""14:00"", ""30""], [""computer"", ""12:30"", ""100""]] | [""science"", ""history"", ""computer"", ""music""]
+[[""aaa"", ""12:00"", ""20""], [""bbb"", ""12:10"", ""30""], [""ccc"", ""12:40"", ""10""]] | [""bbb"", ""ccc"", ""aaa""]
+
+시각 | 진행 중 과제 | 잠시 멈춘 과제 | 설명
+--- | --- | --- | ---
+""12:20"" | ""music"" | [ ] | ""music""을 시작합니다.
+""12:30"" | ""computer"" | [""music""] | ""music""을 잠시 멈추고(남은 시간 30분) ""computer""를 시작합니다
+""12:40"" | ""science"" | [""music"", ""computer""] | ""computer""를 잠시 멈추고(남은 시간 90분) ""science""를 시작합니다
+""13:30"" | ""computer"" | [""music""] | ""science""를 끝내고 가장 최근에 멈춘 ""computer""를 다시 시작합니다
+""14:00"" | ""history"" | [""music"", ""computer""] | ""computer""를 잠시 멈추고(남은 시간 60분) ""history""를 시작합니다
+""14:30"" | ""computer"" | [""music""] | ""history""를 끝내고 가장 최근에 멈춘 ""computer""를 다시 시작합니다""
+""15:30"" | ""music"" | [ ] | ""computer""를 끝내고 가장 최근에 멈춘 ""music""을 다시 시작합니다""
+""16:00"" | - | [ ] | ""music""을 끝냅니다","class Solution {
+    public String[] solution(String[][] plans) {
+        String[] answer = {};
+        return answer;
+    }
+}"
+[PCCP 기출문제] 2번 / 석유 시추,"시추관의 위치 | 획득한 덩어리 | 총 석유량
+--- | --- | ---
+1 | [8] | 8
+2 | [8] | 8
+3 | [8] | 8
+4 | [7] | 7
+5 | [7] | 7
+6 | [7] | 7
+7 | [7, 2] | 9
+8 | [2] | 2
+
+land | result
+--- | ---
+[[0, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 1, 1, 0, 0], [1, 1, 0, 0, 0, 1, 1, 0], [1, 1, 1, 0, 0, 0, 0, 0], [1, 1, 1, 0, 0, 0, 1, 1]] | 9
+[[1, 0, 1, 0, 1, 1], [1, 0, 1, 0, 0, 0], [1, 0, 1, 0, 0, 1], [1, 0, 0, 1, 0, 0], [1, 0, 0, 1, 0, 1], [1, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 1]] | 16
+
+시추관의 위치 | 획득한 덩어리 | 총 석유량
+--- | --- | ---
+1 | [12] | 12
+2 | [12] | 12
+3 | [3, 12] | 15
+4 | [2, 12] | 14
+5 | [2, 12] | 14
+6 | [2, 1, 1, 12] | 16","class Solution {
+    public int solution(int[][] land) {
+        int answer = 0;
+        return answer;
+    }
+}"
+N-Queen,"n | result
+--- | ---
+4 | 2","class Solution {
+    public int solution(int n) {
+        int answer = 0;
+        return answer;
+    }
+}"
+자물쇠와 열쇠,"key | lock | result
+--- | --- | ---
+[[0, 0, 0], [1, 0, 0], [0, 1, 1]] | [[1, 1, 1], [1, 1, 0], [1, 0, 1]] | true","class Solution {
+    public boolean solution(int[][] key, int[][] lock) {
+        boolean answer = true;
+        return answer;
+    }
+}"
+합승 택시 요금,"n | s | a | b | fares | result
+--- | --- | --- | --- | --- | ---
+6 | 4 | 6 | 2 | [[4, 1, 10], [3, 5, 24], [5, 6, 2], [3, 1, 41], [5, 1, 24], [4, 6, 50], [2, 4, 66], [2, 3, 22], [1, 6, 25]] | 82
+7 | 3 | 4 | 1 | [[5, 7, 9], [4, 6, 4], [3, 6, 1], [3, 2, 3], [2, 1, 6]] | 14
+6 | 4 | 5 | 6 | [[2,6,6], [6,3,7], [4,6,7], [6,5,11], [2,5,12], [5,3,20], [2,4,8], [4,3,9]] | 18","class Solution {
+    public int solution(int n, int s, int a, int b, int[][] fares) {
+        int answer = 0;
+        return answer;
+    }
+}"
+신고 결과 받기,"유저 ID | 유저가 신고한 ID | 설명
+--- | --- | ---
+""muzi"" | ""frodo"" | ""muzi""가 ""frodo""를 신고했습니다.
+""apeach"" | ""frodo"" | ""apeach""가 ""frodo""를 신고했습니다.
+""frodo"" | ""neo"" | ""frodo""가 ""neo""를 신고했습니다.
+""muzi"" | ""neo"" | ""muzi""가 ""neo""를 신고했습니다.
+""apeach"" | ""muzi"" | ""apeach""가 ""muzi""를 신고했습니다.
+
+유저 ID | 신고당한 횟수
+--- | ---
+""muzi"" | 1
+""frodo"" | 2
+""apeach"" | 0
+""neo"" | 2
+
+유저 ID | 유저가 신고한 ID | 정지된 ID
+--- | --- | ---
+""muzi"" | [""frodo"", ""neo""] | [""frodo"", ""neo""]
+""frodo"" | [""neo""] | [""neo""]
+""apeach"" | [""muzi"", ""frodo""] | [""frodo""]
+""neo"" | 없음 | 없음
+
+id_list | report | k | result
+--- | --- | --- | ---
+[""muzi"", ""frodo"", ""apeach"", ""neo""] | [""muzi frodo"",""apeach frodo"",""frodo neo"",""muzi neo"",""apeach muzi""] | 2 | [2,1,1,0]
+[""con"", ""ryan""] | [""ryan con"", ""ryan con"", ""ryan con"", ""ryan con""] | 3 | [0,0]","class Solution {
+    public int[] solution(String[] id_list, String[] report, int k) {
+        int[] answer = {};
+        return answer;
+    }
+}"
