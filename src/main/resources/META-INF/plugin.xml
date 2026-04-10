@@ -21,6 +21,10 @@
     </p>
 
     <h3>✨ 주요 기능</h3>
+    <h3>Overview</h3>
+    <p>
+      <img src="https://raw.githubusercontent.com/gks930620/programmers_helper/master/overview-1.png" alt="Programmers Helper overview screenshot"/>
+    </p>
     <ul>
       <li>우측 Tool Window에서 문제 목록을 이름으로 검색</li>
       <li>문제 선택 시 템플릿 코드를 즉시 미리보기</li>
