@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.example"
-version = "1.0.0"
+version = "1.0.4"
 
 fun readDotEnvValue(key: String): String? {
     val envFile = rootProject.file(".env")

@@ -5,16 +5,16 @@
 
   <!-- Public plugin name should be written in Title Case.
        Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-name -->
-  <name>programmers_helper</name>
+  <name>Programmers Main Generator</name>
 
   <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-  <vendor url="https://github.com/gks930620/programmers_helper">programmers_helper</vendor>
+  <vendor url="https://github.com/gks930620/programmers_helper">gks930620</vendor>
   <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
        Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-description -->
   <description><![CDATA[
-    <h2>Programmers Helper</h2>
+    <h2>Programmers Main Generator</h2>
     <p>
-      Programmers Helper is an IntelliJ plugin that helps you start Programmers coding test problems quickly.<br/>
+      Programmers Main Generator is an IntelliJ plugin that helps you start Programmers coding test problems quickly.<br/>
       프로그래머스 코딩테스트 문제를 IDE 안에서 바로 시작할 수 있도록 도와주는 플러그인입니다.<br/>
       문제마다 <b>테스트 케이스가 포함된 템플릿 파일</b>을 제공하여,
       별도 설정 없이 <code>main</code> 메소드를 실행하는 것만으로 결과를 확인할 수 있습니다.
@@ -23,7 +23,7 @@
     <h3>✨ 주요 기능</h3>
     <h3>Overview</h3>
     <p>
-      <img src="https://raw.githubusercontent.com/gks930620/programmers_helper/master/overview-1.png" alt="Programmers Helper overview screenshot"/>
+      <img src="https://raw.githubusercontent.com/gks930620/programmers_helper/master/overview-1.png" alt="Programmers Main Generator overview screenshot"/>
     </p>
     <ul>
       <li>우측 Tool Window에서 문제 목록을 이름으로 검색</li>
@@ -35,7 +35,7 @@
 
     <h3>🚀 사용 방법</h3>
     <ol>
-      <li>IDE 우측의 <b>Programmers Helper</b> Tool Window를 엽니다.</li>
+      <li>IDE 우측의 <b>Programmers Main Generator</b> Tool Window를 엽니다.</li>
       <li>상단 검색창에 문제 이름을 입력합니다. (현재 Java 템플릿 제공)</li>
       <li>목록에서 풀고 싶은 문제를 클릭하면 우측에 코드가 미리보기됩니다.</li>
       <li>
